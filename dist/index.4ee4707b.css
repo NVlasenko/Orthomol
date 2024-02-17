@@ -1,0 +1,79 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-family: Oddval, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 0;
+  padding: 125px;
+}
+
+@media (width >= 744px) {
+  .container {
+    width: 600px;
+    padding: 0;
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    width: 1020px;
+    padding: 0;
+  }
+}
+
+@font-face {
+  font-family: Oddval;
+  src: url("oddval-semibold.bb52d155.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.header__title {
+  letter-spacing: -1px;
+  text-align: left;
+  color: #0b3373;
+  margin-top: 158px;
+  margin-left: 283px;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 96px;
+}
+
+.header__subtitle {
+  letter-spacing: 0;
+  text-align: left;
+  color: #0b3373;
+  width: 475px;
+  margin-top: 14px;
+  margin-left: 283px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.header__btn {
+  text-align: center;
+  color: #fff;
+  background-color: #0b3373;
+  border: 3px solid #0b3373;
+  border-radius: 34px;
+  width: 267.77px;
+  height: 59px;
+  margin-top: 38px;
+  margin-left: 283px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+/*# sourceMappingURL=index.4ee4707b.css.map */
