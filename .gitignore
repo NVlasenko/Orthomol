@@ -35,5 +35,5 @@ prepros.config
 .env
 .env.local
 
-parcel-cache/
+.parcel-cache/
 .cache
