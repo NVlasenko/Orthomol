@@ -34,3 +34,6 @@ prepros.config
 # Файлы окружения
 .env
 .env.local
+
+parcel-cache/
+.cache
