@@ -1,0 +1,135 @@
+.menu {
+  height: 71px;
+  background-color: #dfe3bf;
+  border: 2px solid #f8fAe2;
+   z-index: 10;
+  @include on-desktop {
+    position: fixed;
+    margin: 0 auto;
+    width: 1190px;
+    top: 15px;
+    left: 0;
+    right: 0;
+    background-color: #dfe3bf;
+    box-sizing: border-box;
+    border: 2px solid #f8fAe2;
+    border-radius: 90px;
+  }
+
+  &__content {
+    display: flex;
+    @include on-desktop {
+      height: 71px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    cursor: pointer;
+    &--img {
+      display: flex;
+      align-items: center;
+    }
+    &--name {
+      color: $mainTextColor;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  
+
+  &__info {
+    @include on-desktop {
+      display: flex;
+      gap: 150px;
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    @include on-desktop {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      color: $mainTextColor;
+    }
+  }
+
+  &__listInfo {
+    @include on-desktop {
+      height: 71px;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      cursor: pointer;
+    }
+  }
+
+  &__contacts { 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 71px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 17px;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    border: 1px solid $mainTextColor;
+    cursor: pointer;
+  }
+
+  &__tel {
+    text-decoration: none;
+    border-radius: 90px;
+    border: 1px solid $mainTextColor;
+    width: 280px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: center;
+    color: $mainTextColor;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/phone.svg);
+      background-repeat: no-repeat;
+      width: 19px;
+      height: 19px;
+      left: 28px;
+      top: 11px;
+    }
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    &--basket {
+      cursor: pointer;
+    }
+  }
+}

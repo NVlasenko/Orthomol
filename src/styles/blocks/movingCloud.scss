@@ -1,0 +1,43 @@
+.moving-container {
+  position: relative;
+  @include on-desktop {
+    &--cloudFirst {
+      animation: moveCloudFirst 25s linear infinite;
+      position: absolute;
+      background-image: url(../images/movingCloud/cloud1.svg);
+      width: 250px;
+      height: 45px;
+      top: 100px;
+      left: 20px;
+      z-index: 1;
+    }
+    &--cloudSecond {
+      animation: moveCloudSecond 25s linear infinite;
+      position: absolute;
+      background-image: url(../images/movingCloud/cloud2.svg);
+      width: 230px;
+      height: 45px;
+      top: 200px;
+      left: 400px;
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes moveCloudFirst {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-200%); 
+  }
+}
+
+@keyframes moveCloudSecond {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-300%); 
+  }
+}

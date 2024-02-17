@@ -1,0 +1,36 @@
+# Зависимости
+/node_modules/
+
+# Компилированные файлы
+/dist/
+*.css
+*.css.map
+
+# Кэш SASS/SCSS
+.sass-cache/
+
+# Конфигурационные файлы инструментов
+prepros.config
+
+# Логи
+*.log
+
+# Временные файлы, которые могут создаваться различными редакторами
+*.swp
+*.tmp
+*~
+.DS_Store
+
+# Игнорирование всех HTML файлов в корневой папке, кроме index.html
+/*.html
+!index.html
+
+# Файлы среды разработки и настройки IDE
+/.vscode/
+/.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Файлы окружения
+.env
+.env.local
