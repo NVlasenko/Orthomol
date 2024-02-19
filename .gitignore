@@ -3,6 +3,8 @@
 
 # Компилированные файлы
 *.css.map
+*.css
+!src/styles/styles.css
 
 # Кэш SASS/SCSS
 .sass-cache/

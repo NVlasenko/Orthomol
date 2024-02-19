@@ -1,28 +1,38 @@
 .menu {
-  height: 71px;
   background-color: #dfe3bf;
   border: 2px solid #f8fAe2;
-   z-index: 10;
+  position: fixed;
+  border-radius: 90px;
+  margin: auto;
+  height: 50px;
+  // width: 695px;
+  // width: 100%;
+  z-index: 10;
+  top: 5px;
+  // left: 0;
+  // right: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  box-sizing: border-box;
   @include on-desktop {
-    position: fixed;
-    margin: 0 auto;
-    width: 1190px;
+    height: 71px;
+    // width: 1190px;
     top: 15px;
-    left: 0;
-    right: 0;
-    background-color: #dfe3bf;
-    box-sizing: border-box;
-    border: 2px solid #f8fAe2;
-    border-radius: 90px;
+    // left: 0;
+    // right: 0;
   }
 
   &__content {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    padding: 0 20px;
     @include on-desktop {
+      padding: 0 40px;
       height: 71px;
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: space-around;
     }
   }
@@ -30,25 +40,32 @@
   &__logo {
     display: flex;
     flex-direction: row;
-    gap: 7px;
+    gap: 5px;
     cursor: pointer;
+    @include on-desktop {
+      gap: 7px;
+    }
     &--img {
       display: flex;
       align-items: center;
     }
     &--name {
       color: $mainTextColor;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 22px;
       display: flex;
       align-items: center;
+      @include on-desktop {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        align-items: center;
+      }
     }
   }
 
   
 
   &__info {
+    display: none;
     @include on-desktop {
       display: flex;
       gap: 150px;
@@ -79,57 +96,98 @@
 
   &__contacts { 
     display: flex;
-    gap: 20px;
     align-items: center;
-    height: 71px;
+    @include on-desktop {
+      height: 71px;
+      gap: 20px;
+    }
   }
 
   &__icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: 17px;
-    width: 42px;
-    height: 42px;
     border-radius: 100%;
     border: 1px solid $mainTextColor;
     cursor: pointer;
+    @include on-desktop {
+      background-size: 17px;
+      width: 42px;
+      height: 42px;
+    }
   }
 
   &__tel {
     text-decoration: none;
-    border-radius: 90px;
     border: 1px solid $mainTextColor;
-    width: 280px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 14px;
     text-align: center;
     color: $mainTextColor;
-    height: 43px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     cursor: pointer;
+    @include on-desktop {
+      border-radius: 90px;
+      width: 280px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 14px;
+      height: 43px;
+    }
+  
     &::before {
       content: '';
       position: absolute;
       background-image: url(../images/icons/phone.svg);
       background-repeat: no-repeat;
-      width: 19px;
-      height: 19px;
-      left: 28px;
-      top: 11px;
+      @include on-desktop {
+        width: 19px;
+        height: 19px;
+        left: 28px;
+        top: 11px;
+      }
     }
   }
 
   &__price {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 15px;
+    &--location {
+      display: flex;
+      padding: 4px 9px;
+      flex-direction: row;
+      gap: 5px;
+      border: 1px solid $mainTextColor;
+      border-radius: 30px;
+     align-items: center;
+      @include on-desktop {
+        gap: 5px;
+        padding: 8px 15px;
+      }
+    }
     &--basket {
       cursor: pointer;
     }
+
+    &--burger {
+      display: flex;
+      align-items: center;
+      height: 35px;
+      width: 35px;
+      @include on-desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__amount {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $mainTextColor;
   }
 }

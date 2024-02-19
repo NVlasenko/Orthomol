@@ -12,13 +12,23 @@
       z-index: 1;
     }
     &--cloudSecond {
-      animation: moveCloudSecond 25s linear infinite;
+      animation: moveCloudSecond 35s linear infinite;
       position: absolute;
       background-image: url(../images/movingCloud/cloud2.svg);
       width: 230px;
       height: 45px;
       top: 200px;
       right: 20px;
+      z-index: 1;
+    }
+    &--cloudThirty {
+      animation: moveCloudThirty 35s linear infinite;
+      position: absolute;
+      background-image: url(../images/movingCloud/cloud3.svg);
+      width: 230px;
+      height: 45px;
+      top: 300px;
+      right: 400px;
       z-index: 1;
     }
   }
@@ -38,6 +48,15 @@
     transform: translateX(100vw);
   }
   to {
-    transform: translateX(-550%); 
+    transform: translateX(-700%); 
+  }
+}
+
+@keyframes moveCloudThirty {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-350%); 
   }
 }

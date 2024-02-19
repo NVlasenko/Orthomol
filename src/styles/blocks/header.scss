@@ -1,11 +1,13 @@
 .header {
+  height: 100vh;
+  background-image: url(../images/bg/bi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
   @include on-desktop {
-    height: 100vh;
-    background-image: url(../images/bg/bi.jpg);
-    background-size: cover;
+    height: 779px;
   }
   &__title {
-
     color: $mainTextColor;
     @include on-desktop {
       position: relative;
@@ -14,7 +16,6 @@
       line-height: 76px;
       letter-spacing: -1px;
       text-align: left;
-      // margin-top: 158px;
       padding-top: 158px;
       margin-left: 50px;
       z-index: 2;
@@ -23,33 +24,37 @@
 
   &__subtitle {
     font-family: Inter;
-    width: 475px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-top: 14px;
     color: $mainTextColor;
-    margin-left: 50px;
+    @include on-desktop {
+      width: 475px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-top: 14px;
+      margin-left: 50px;
+    }
   }
 
   &__button {
     display: block;
-    width: 267.77px;
-    height: 59px;
-    border-radius: 34px;
+    transition: all 1s ease-in-out;
     border: 3px $mainTextColor solid;
     background-color: $mainTextColor;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
-    text-align: center;
-    align-items: center;
-    margin-left: 50px;
-    margin-top: 38px;
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    text-align: center;
+    @include on-desktop {
+      width: 267.77px;
+      height: 59px;
+      border-radius: 34px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      align-items: center;
+      margin-left: 50px;
+      margin-top: 38px;
+    }
     &:hover {
       background-color: #275aac;
       box-shadow: 10px 10px 10px rgba(96, 143, 224, 0.2);
@@ -63,26 +68,33 @@
 
   &__productInfo {
     position: absolute;
-    top: 650px;
-    right: 143px;
     &--list {
       list-style-type: none;
     }
     &--item {
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 29px;
-      color: #d5dbb4;
-      margin-top: 18px;
       position: relative;
-      &::before {
-        content: '';
-        position: absolute;
-        background-image: url(../images/icons/mark.svg);
-        width: 40px;
-        height: 40px;
-        left: -50px;
-        bottom: -6px;
+    }
+    @include on-desktop {
+      top: 650px;
+      right: 143px;
+      &--list {
+        list-style-type: none;
+      }
+      &--item {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        color: #d5dbb4;
+        margin-top: 18px;
+        &::before {
+          content: '';
+          position: absolute;
+          background-image: url(../images/icons/mark.svg);
+          width: 40px;
+          height: 40px;
+          left: -50px;
+          bottom: -6px;
+        }
       }
     }
   }
