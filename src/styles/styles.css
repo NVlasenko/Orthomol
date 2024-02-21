@@ -300,14 +300,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   position: relative;
   background-position: center right;
 }
-@media (min-width: 744px) {
-  .header {
-    background-position: center right;
-  }
-}
 .header__info {
-  margin-top: 110px;
-  margin-left: 20px;
+  margin-top: 130px;
+  margin-left: 35px;
 }
 @media (min-width: 744px) {
   .header__info {
@@ -323,11 +318,11 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   color: #0b3373;
   position: relative;
   z-index: 2;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 400;
   text-align: left;
   letter-spacing: -1px;
-  line-height: 35px;
+  line-height: 39px;
 }
 @media (min-width: 744px) {
   .header__title {
@@ -345,11 +340,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 .header__subtitle {
   font-family: Inter;
   color: #0b3373;
+  font-size: 20px;
   z-index: 2;
   position: relative;
-  width: 245px;
+  width: 275px;
   text-align: left;
-  line-height: 18px;
+  line-height: 20px;
   margin-top: 18px;
 }
 @media (min-width: 744px) {
@@ -380,16 +376,16 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   background-color: #0b3373;
   cursor: pointer;
   text-align: center;
-  width: 107.77px;
-  height: 39px;
+  width: 141px;
+  height: 45px;
   border-radius: 34px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 22px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 38px;
+  margin-top: 40px;
 }
 @media (min-width: 744px) {
   .header__button {
@@ -420,7 +416,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 .header__productInfo {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   right: 70px;
 }
 @media (min-width: 744px) {
@@ -438,7 +434,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 .header__productInfo--item {
   position: relative;
   list-style-type: none;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 10px;
   font-weight: 600;
   color: #d5dbb4;
@@ -463,9 +459,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   position: absolute;
   background-image: url(../images/icons/mark.svg);
   background-repeat: no-repeat;
-  background-size: 18px;
-  width: 18px;
-  height: 18px;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
   left: -25px;
   bottom: -3px;
 }
@@ -517,7 +513,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 13px 20px;
+  padding: 10px 10px;
+}
+@media (min-width: 744px) {
+  .menu__content {
+    padding: 13px 20px;
+  }
 }
 @media (min-width: 1280px) {
   .menu__content {

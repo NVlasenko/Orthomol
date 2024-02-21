@@ -7,12 +7,12 @@
   position: relative;
   background-position: center right;
   @include on-tablet {
-    background-position: center right;
+
   }
 
   &__info{
-    margin-top: 110px;
-    margin-left: 20px;
+    margin-top: 130px;
+    margin-left: 35px;
     @include on-tablet {
       margin-top: 145px;
     }
@@ -24,11 +24,11 @@
     color: $mainTextColor;
     position: relative;
     z-index: 2;
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 400;
     text-align: left;
     letter-spacing: -1px;
-    line-height: 35px;
+    line-height: 39px;
     @include on-tablet {
       font-size: 40px;
       line-height: 45px;
@@ -43,11 +43,12 @@
   &__subtitle {
     font-family: Inter;
     color: $mainTextColor;
+    font-size: 20px;
     z-index: 2;
     position: relative;
-    width: 245px;
+    width: 275px;
     text-align: left;
-    line-height: 18px;
+    line-height: 20px;
     margin-top: 18px;
     @include on-tablet {
       width: 345px;
@@ -74,14 +75,14 @@
     background-color: $mainTextColor;
     cursor: pointer;
     text-align: center;
-    width: 107.77px;
-    height: 39px;
+    width: 141px;
+    height: 45px;
     border-radius: 34px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 22px;
     align-items: center;
-    margin-top: 38px;
+    margin-top: 40px;
     @include on-tablet {
       width: 144.77px;
       height: 45px;
@@ -109,7 +110,7 @@
 
   &__productInfo {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     right: 70px;
     @include on-tablet {
       bottom: 30px;
@@ -123,7 +124,7 @@
       &--item {
         position: relative;
         list-style-type: none;
-        font-size: 15px;
+        font-size: 17px;
         line-height: 10px;
         font-weight: 600;
         color: #d5dbb4;
@@ -143,9 +144,9 @@
           position: absolute;
           background-image: url(../images/icons/mark.svg);
           background-repeat: no-repeat;
-          background-size: 18px;
-          width: 18px;
-          height: 18px;
+          background-size: 20px;
+          width: 20px;
+          height: 20px;
           left: -25px;
             bottom: -3px;
           @include on-tablet {

@@ -22,7 +22,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 13px 20px;
+    padding: 10px 10px;
+    @include on-tablet {
+      padding: 13px 20px;
+    }
     @include on-desktop {
       padding: 15px 25px;
       flex-direction: row;
