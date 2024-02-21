@@ -127,7 +127,7 @@ function setMenuWidth() {
   var menu = document.querySelector('.menu');
   var menuOpen = document.querySelector('.menuOpen');
   if (container && menu) {
-    var containerWidth = container.offsetWidth - 120;
+    var containerWidth = container.offsetWidth - 50;
     menu.style.width = "".concat(containerWidth, "px");
     menuOpen.style.width = "".concat(containerWidth, "px");
   }

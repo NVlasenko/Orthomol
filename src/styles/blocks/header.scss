@@ -5,14 +5,14 @@
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
-  background-position: center right;
+  background-position: center;
   @include on-tablet {
-
+    background-position: center right;
   }
 
   &__info{
     margin-top: 130px;
-    margin-left: 35px;
+    margin-left: 25px;
     @include on-tablet {
       margin-top: 145px;
     }
