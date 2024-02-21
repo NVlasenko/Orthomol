@@ -4,34 +4,27 @@
   position: fixed;
   border-radius: 90px;
   margin: auto;
-  height: 50px;
-  // width: 695px;
-  // width: 100%;
-  z-index: 10;
-  top: 5px;
-  // left: 0;
-  // right: 0;
+
+  z-index: 999;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%); 
   box-sizing: border-box;
+  @include on-tablet {
+    
+   }
   @include on-desktop {
-    height: 71px;
-    // width: 1190px;
+  
     top: 15px;
-    // left: 0;
-    // right: 0;
   }
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 47px;
-    padding: 0 20px;
+    padding: 13px 20px;
     @include on-desktop {
-      padding: 0 40px;
-      height: 71px;
-      display: flex;
+      padding: 15px 25px;
       flex-direction: row;
       justify-content: space-around;
     }
@@ -53,12 +46,9 @@
       color: $mainTextColor;
       display: flex;
       align-items: center;
-      @include on-desktop {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 22px;
-        align-items: center;
-      }
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
     }
   }
 
@@ -68,7 +58,7 @@
     display: none;
     @include on-desktop {
       display: flex;
-      gap: 150px;
+      gap: 100px;
       flex-direction: row;
     }
   }
@@ -80,12 +70,12 @@
       font-weight: 600;
       line-height: 22px;
       color: $mainTextColor;
+      text-decoration: none;
     }
   }
 
   &__listInfo {
     @include on-desktop {
-      height: 71px;
       align-items: center;
       display: flex;
       flex-direction: row;
@@ -98,7 +88,6 @@
     display: flex;
     align-items: center;
     @include on-desktop {
-      height: 71px;
       gap: 20px;
     }
   }
@@ -161,10 +150,10 @@
       gap: 5px;
       border: 1px solid $mainTextColor;
       border-radius: 30px;
-     align-items: center;
+      align-items: center;
       @include on-desktop {
         gap: 5px;
-        padding: 8px 15px;
+        padding: 12px 15px;
       }
     }
     &--basket {

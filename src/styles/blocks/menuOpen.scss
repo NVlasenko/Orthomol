@@ -1,0 +1,77 @@
+.menuActive {
+  transform: translateX(-200%);
+  transition: 2s all ease;
+  background-color: #8fb562;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 999;
+}
+
+.menuOpen {
+    background-color: #dfe3bf;
+    border: 2px solid #f8fAe2;
+    border-radius: 90px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%); 
+    box-sizing: border-box;
+      @include on-tablet {
+
+      }
+    @include on-desktop {
+      display: none;
+    }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    @include on-tablet {
+      margin-top: 80px;
+      margin-left: 50px;
+      gap: 20px;
+    }
+  }
+  &__link {
+    @include on-tablet {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: $mainTextColor;
+      text-decoration: none;
+    }
+  }
+
+  &__close {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  &__icon {
+    background-size: 17px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid $mainTextColor;
+    cursor: pointer;
+  }
+}

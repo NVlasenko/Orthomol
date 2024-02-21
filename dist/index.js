@@ -168,11 +168,7 @@ function reloadCSS() {
   }, 50);
 }
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../.nvm/versions/node/v14.21.3/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/styles.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../fonts/oddval-semibold.ttf":[["oddval-semibold.3f73b6b8.ttf","fonts/oddval-semibold.ttf"],"fonts/oddval-semibold.ttf"],"./../images/movingCloud/cloud1.svg":[["cloud1.b11f012a.svg","images/movingCloud/cloud1.svg"],"images/movingCloud/cloud1.svg"],"./../images/movingCloud/cloud2.svg":[["cloud2.1b90d94d.svg","images/movingCloud/cloud2.svg"],"images/movingCloud/cloud2.svg"],"./../images/movingCloud/cloud3.svg":[["cloud3.bcc6904b.svg","images/movingCloud/cloud3.svg"],"images/movingCloud/cloud3.svg"],"./../images/bg/bg.jpg":[["bg.a05c757d.jpg","images/bg/bg.jpg"],"images/bg/bg.jpg"],"./../images/icons/mark.svg":[["mark.37229f46.svg","images/icons/mark.svg"],"images/icons/mark.svg"],"./../images/icons/phone.svg":[["phone.636ae0df.svg","images/icons/phone.svg"],"images/icons/phone.svg"],"_css_loader":"../../../../.nvm/versions/node/v14.21.3/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../.nvm/versions/node/v14.21.3/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../../.nvm/versions/node/v14.21.3/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../../.nvm/versions/node/v14.21.3/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -342,4 +338,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../../.nvm/versions/node/v14.21.3/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/styles.956d002c.js.map
+//# sourceMappingURL=/index.js.map

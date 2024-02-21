@@ -1,38 +1,85 @@
 .moving-container {
   position: relative;
-  @include on-desktop {
-    &--cloudFirst {
-      animation: moveCloudFirst 25s linear infinite;
-      position: absolute;
-      background-image: url(../images/movingCloud/cloud1.svg);
+  &--cloudFirst {
+    display: block;
+    animation: moveCloudFirst 25s linear infinite;
+    position: absolute;
+    background-image: url(../images/movingCloud/cloud1.svg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 45px;
+    top: 100px;
+    left: 20px;
+    z-index: 1;
+    @include on-tablet {
+      background-size: 150px;
+      width: 150px;
+      height: 45px;
+      top: 85px;
+      left: 20px;
+    }
+    @include on-desktop {
+      background-size: 250px;
       width: 250px;
       height: 45px;
       top: 100px;
-      left: 20px;
-      z-index: 1;
-    }
-    &--cloudSecond {
-      animation: moveCloudSecond 35s linear infinite;
-      position: absolute;
-      background-image: url(../images/movingCloud/cloud2.svg);
-      width: 230px;
-      height: 45px;
-      top: 200px;
-      right: 20px;
-      z-index: 1;
-    }
-    &--cloudThirty {
-      animation: moveCloudThirty 35s linear infinite;
-      position: absolute;
-      background-image: url(../images/movingCloud/cloud3.svg);
-      width: 230px;
-      height: 45px;
-      top: 300px;
-      right: 400px;
-      z-index: 1;
+      left: 50px;
     }
   }
-}
+
+
+    &--cloudSecond {
+      animation: moveCloudSecond 55s linear infinite;
+      position: absolute;
+      background-image: url(../images/movingCloud/cloud2.svg);
+      background-size: 100px;
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 45px;
+      top: 138px;
+      right: 150px;
+      @include on-tablet {
+        background-size: 150px;
+        width: 150px;
+        height: 45px;
+        top: 135px;
+        right: 150px;
+      }
+      @include on-desktop {
+        background-size: 250px;
+        width: 250px;
+        height: 45px;
+        top: 220px;
+        left: 50px;
+      }
+    }
+    &--cloudThirty {
+      animation: moveCloudThirty 45s linear infinite;
+      position: absolute;
+      background-image: url(../images/movingCloud/cloud3.svg);
+      background-size: 100px;
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 45px;
+      top: 185px;
+      right: 230px;
+      @include on-tablet {
+        background-size: 100px;
+        width: 100px;
+        height: 45px;
+        top: 200px;
+        right: 320px;
+      }
+      @include on-desktop {
+        background-size: 250px;
+        width: 250px;
+        height: 45px;
+        top: 300px;
+        left: 50px;
+      }
+    }
+  }
 
 @keyframes moveCloudFirst {
   from {
