@@ -308,6 +308,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .wave__one {
+    display: block;
     top: 170px;
     left: 20px;
     -webkit-transform: auto;
@@ -321,6 +322,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .wave__two {
+    display: block;
     top: 190px;
     left: 170px;
   }
@@ -529,7 +531,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background-position: top right;
+  background-position: left;
 }
 @media (min-width: 744px) {
   .header {

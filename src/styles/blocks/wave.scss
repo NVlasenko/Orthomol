@@ -12,6 +12,7 @@
       // margin-top: 176px;
     }
     @include on-desktop {
+      display: block;
       top: 170px;
       left: 20px;
       transform: auto;
@@ -27,6 +28,7 @@
       // left: 80px;
     }
     @include on-desktop {
+      display: block;
       top: 190px;
       left: 170px;
     }
