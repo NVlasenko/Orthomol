@@ -197,7 +197,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
           transform: translateX(-200%);
   -webkit-transition: 2s all ease;
   transition: 2s all ease;
-  background-color: #8fb562;
+  background-image: url(/bgMenuOpen.a20b60af.png);
+  background-size: cover;
   position: absolute;
   width: 100vw;
   top: 0;
@@ -235,6 +236,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 90px;
+  gap: 20px;
 }
 @media (min-width: 744px) {
   .menuOpen__list {
@@ -243,13 +246,17 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     gap: 20px;
   }
 }
+.menuOpen__link {
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #0b3373;
+  text-decoration: none;
+}
 @media (min-width: 744px) {
   .menuOpen__link {
     font-size: 36px;
-    font-weight: 600;
     line-height: 1.2;
-    color: #0b3373;
-    text-decoration: none;
   }
 }
 .menuOpen__close {
@@ -272,6 +279,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 15px;
+  margin-top: 20px;
 }
 .menuOpen__icon {
   background-size: 17px;

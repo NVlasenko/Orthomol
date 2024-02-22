@@ -1,7 +1,8 @@
 .menuActive {
   transform: translateX(-200%);
   transition: 2s all ease;
-  background-color: #8fb562;
+  background-image: url(../images/bg/bgMenuOpen.png);
+  background-size: cover;
   position: absolute;
   width: 100vw;
   top: 0;
@@ -33,6 +34,8 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    margin-top: 90px;
+    gap: 20px;
     @include on-tablet {
       margin-top: 80px;
       margin-left: 50px;
@@ -40,12 +43,14 @@
     }
   }
   &__link {
-    @include on-tablet {
-      font-size: 36px;
+      font-size: 29px;
       font-weight: 600;
-      line-height: 1.2;
+      line-height: 1.3;
       color: $mainTextColor;
       text-decoration: none;
+    @include on-tablet {
+      font-size: 36px;
+      line-height: 1.2;
     }
   }
 
@@ -61,6 +66,7 @@
     display: flex;
     flex-direction: row;
     gap: 15px;
+    margin-top: 20px;
   }
 
   &__icon {
