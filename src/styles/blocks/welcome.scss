@@ -1,0 +1,134 @@
+.welcome {
+  position: fixed;
+  z-index: 30;
+  background-image: url(../images/bg/bgMenuOpen.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform 1s ease;
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    color: $mainTextColor;
+    align-items: center;
+    height: 60%;
+    font-size: 30px;
+    text-align: center;
+    @include on-desktop {
+      font-size: 50px;
+    }
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 0;
+  height: 10px;
+  border-radius: 10px;
+  background-color: $mainTextColor;
+  animation: loader 5s ease-in-out infinite;
+  @include on-desktop {
+    top: 45%;
+    height: 15px;
+    animation: loaderTwo 5s ease-in-out infinite;
+  }
+}
+
+// @keyframes loader {
+//   0% {
+//     width: 30px;
+//   }
+//   20% {
+//     width: 60px; 
+//   }
+//   30% {
+//     width: 90px;
+//   }
+//   40% {
+//     width: 120px;
+//   }
+//   50% {
+//     width: 150px;
+//   }
+//   60% {
+//     width: 180px;
+//   }
+//   70% {
+//     width: 210px;
+//   }
+//   80% {
+//     width: 240px;
+//   }
+//   90% {
+//     width: 270px;
+//   }
+//   100% {
+//     width: 280px;
+//   }
+// }
+
+// @keyframes loaderTwo {
+//   0% {
+//     width: 40px;
+//   }
+//   20% {
+//     width: 80px; 
+//   }
+//   30% {
+//     width: 120px;
+//   }
+//   40% {
+//     width: 160px;
+//   }
+//   50% {
+//     width: 200px;
+//   }
+//   60% {
+//     width: 240px;
+//   }
+//   70% {
+//     width: 280px;
+//   }
+//   80% {
+//     width: 320px;
+//   }
+//   90% {
+//     width: 360px;
+//   }
+//   100% {
+//     width: 400px;
+//   }
+// }
+
+@keyframes loader {
+  0% {
+    width: 30px;
+  }
+  50% {
+    width: 280px;
+  }
+  100% {
+    width: 30px;
+  }
+}
+
+@keyframes loaderTwo {
+  0% {
+    width: 40px;
+  }
+  50% {
+    width: 400px;
+  }
+  100% {
+    width: 40px;
+  }
+}

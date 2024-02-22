@@ -114,10 +114,10 @@
 
   &__productInfo {
     position: absolute;
-    bottom: 50px;
+    bottom: 85px;
     right: 70px;
     @include on-tablet {
-      bottom: 30px;
+      bottom: 50px;
       right: 70px;
     }
     @include on-desktop {
