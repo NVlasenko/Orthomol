@@ -1,0 +1,173 @@
+.wave {
+  position: relative;
+
+  &__one {
+    position: absolute;
+    display: none;
+    @include on-tablet {
+      // display: block;
+      // top: 50%;
+      // left: 5%;
+      // transform: translate(-50%, -50%);
+      // margin-top: 176px;
+    }
+    @include on-desktop {
+      top: 170px;
+      left: 20px;
+      transform: auto;
+      margin-top: 0;
+    }
+  }
+  &__two {
+    display: none;
+    position: absolute;
+    @include on-tablet {
+      // display: block;
+      // top: 200px;
+      // left: 80px;
+    }
+    @include on-desktop {
+      top: 190px;
+      left: 170px;
+    }
+  }
+  &__three {
+    display: none;
+    position: absolute;
+    @include on-tablet {
+      display: none;
+    }
+    @include on-desktop {
+      display: block;
+      top: 190px;
+      left: 80px;
+    }
+  }
+  &__four {
+    display: none;
+    position: absolute;
+    @include on-tablet {
+      display: none;
+    }
+    @include on-desktop {
+      display: block;
+      top: 150px;
+      left: 230px;
+    }
+  }
+  &__five {
+    display: none;
+    position: absolute;
+    @include on-tablet {
+      display: none;
+    }
+    @include on-desktop {
+      display: block;
+      top: 150px;
+      left: 60px;
+    }
+  }
+  &__six {
+    display: none;
+    position: absolute;
+    @include on-tablet {
+      display: none;
+    }
+    @include on-desktop {
+      display: block;
+      top: 140px;
+      left: 310px;
+    }
+  }
+  &__seven {
+    display: none;
+    position: absolute;
+    @include on-tablet {
+      display: none;
+    }
+    @include on-desktop {
+      display: block;
+      top: 170px;
+      left: 300px;
+    }
+  }
+
+  &__small {
+    animation: waveAnimation 3s infinite;
+    opacity: 0;
+    position: absolute;
+    @include on-tablet {
+      width: 20px;
+      left: 7px;
+    }
+    @include on-desktop {
+      width: auto;
+      left: 65px;
+    }
+    &--first {
+      animation: waveAnimation 3s infinite;
+      opacity: 0;
+      position: absolute;
+      animation-delay: 1.5s;
+      @include on-tablet {
+        width: 20px;
+        left: 7px;
+      }
+      @include on-desktop {
+        left: 75px;
+      }
+    }
+  }
+
+  &__big {
+    animation: waveAnimationTwo 3s infinite;
+    animation-delay: 1.5s;
+    opacity: 0;
+    position: absolute;
+    @include on-tablet {
+      width: 30px;
+    }
+    @include on-desktop {
+      left: 50px;
+      width: auto;
+    }
+
+    &--first {
+      animation: waveAnimationTwo 3s infinite;
+      opacity: 0;
+      position: absolute;
+      @include on-tablet {
+        width: 30px;
+      }
+      @include on-desktop {
+        left: 65px;
+      }
+    }
+  }
+}
+
+
+
+@keyframes waveAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes waveAnimationTwo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -3,21 +3,24 @@
   background-image: url(../images/bg/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   position: relative;
-  background-position: center;
+  background-position: top right;
   @include on-tablet {
-    background-position: center right;
+    background-position: auto;
+  }
+  @include on-desktop {
+  
   }
 
-  &__info{
+  &__info {
     margin-top: 130px;
-    margin-left: 25px;
+    margin-left: 10px;
     @include on-tablet {
-      margin-top: 145px;
+      margin-top: 105px;
+      margin-left: 70px;
     }
     @include on-desktop {
-      margin-top: 158px;
+      margin-top: 200px;
     }
   }
   &__title {
@@ -30,13 +33,14 @@
     letter-spacing: -1px;
     line-height: 39px;
     @include on-tablet {
-      font-size: 40px;
+      font-size: 30px;
       line-height: 45px;
     }
     @include on-desktop {
-      font-size: 60px;
+      font-size: 70px;
       font-weight: 600;
       line-height: 76px;
+      margin-top: 14px;
     }
   }
 

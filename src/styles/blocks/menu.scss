@@ -13,7 +13,6 @@
     
    }
   @include on-desktop {
-  
     top: 15px;
   }
 
@@ -48,7 +47,7 @@
       color: $mainTextColor;
       display: flex;
       align-items: center;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
       line-height: 22px;
     }
@@ -59,16 +58,18 @@
   &__info {
     display: none;
     @include on-desktop {
-      display: flex;
-      gap: 100px;
+      gap: 40px;
       flex-direction: row;
+      display: flex;
     }
+    
   }
 
   &__link {
     @include on-desktop {
+      font-size: 18px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
       line-height: 22px;
       color: $mainTextColor;
@@ -78,48 +79,50 @@
 
   &__listInfo {
     @include on-desktop {
+      gap: 30px;
       align-items: center;
       display: flex;
       flex-direction: row;
-      gap: 30px;
+      gap: 25px;
       cursor: pointer;
     }
   }
 
   &__contacts { 
-    display: flex;
-    align-items: center;
     @include on-desktop {
+      display: flex;
+      align-items: center;
       gap: 20px;
     }
   }
 
   &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    border: 1px solid $mainTextColor;
-    cursor: pointer;
     @include on-desktop {
-      background-size: 17px;
+      background-size: 42px;
       width: 42px;
       height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      border: 1px solid $mainTextColor;
+      cursor: pointer;
     }
   }
 
   &__tel {
-    text-decoration: none;
-    border: 1px solid $mainTextColor;
-    text-align: center;
-    color: $mainTextColor;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
     @include on-desktop {
+      text-decoration: none;
+      border: 1px solid $mainTextColor;
+      text-align: center;
+      color: $mainTextColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      cursor: pointer;
       border-radius: 90px;
+      width: 190px;
       width: 280px;
       font-size: 16px;
       font-weight: 600;
@@ -128,15 +131,15 @@
     }
   
     &::before {
-      content: '';
-      position: absolute;
-      background-image: url(../images/icons/phone.svg);
-      background-repeat: no-repeat;
       @include on-desktop {
         width: 19px;
         height: 19px;
         left: 28px;
         top: 11px;
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/phone.svg);
+        background-repeat: no-repeat;
       }
     }
   }
