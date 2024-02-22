@@ -154,7 +154,7 @@ window.addEventListener('load', function () {
   welcomeImage.style.display = 'block';
   setTimeout(function () {
     welcomeImage.style.transform = 'translateY(-100%)';
-  }, 3000);
+  }, 4000);
 });
 
 // === welcome image end ===

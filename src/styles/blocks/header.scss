@@ -13,7 +13,7 @@
   }
 
   &__info {
-    margin-top: 130px;
+    margin-top: 152px;
     margin-left: 10px;
     @include on-tablet {
       margin-top: 105px;
@@ -27,11 +27,11 @@
     color: $mainTextColor;
     position: relative;
     z-index: 2;
-    font-size: 27px;
+    font-size: 32px;
     font-weight: 400;
     text-align: left;
     letter-spacing: -1px;
-    line-height: 39px;
+    line-height: 53px;
     @include on-tablet {
       font-size: 30px;
       line-height: 45px;
@@ -46,13 +46,13 @@
 
   &__subtitle {
     font-family: Inter;
-    color: $mainTextColor;
+    color: #0b3373;
     font-size: 20px;
     z-index: 2;
     position: relative;
-    width: 275px;
+    width: 300px;
     text-align: left;
-    line-height: 20px;
+    line-height: 25px;
     margin-top: 18px;
     @include on-tablet {
       width: 345px;
@@ -79,14 +79,14 @@
     background-color: $mainTextColor;
     cursor: pointer;
     text-align: center;
-    width: 141px;
-    height: 45px;
+    width: 160px;
+    height: 55px;
     border-radius: 34px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 22px;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 50px;
     @include on-tablet {
       width: 144.77px;
       height: 45px;
@@ -114,7 +114,7 @@
 
   &__productInfo {
     position: absolute;
-    bottom: 85px;
+    bottom: 120px;
     right: 70px;
     @include on-tablet {
       bottom: 50px;
@@ -128,8 +128,8 @@
       &--item {
         position: relative;
         list-style-type: none;
-        font-size: 17px;
-        line-height: 10px;
+        font-size: 20px;
+        line-height: 20px;
         font-weight: 600;
         color: #d5dbb4;
         margin-top: 18px;
@@ -148,11 +148,11 @@
           position: absolute;
           background-image: url(../images/icons/mark.svg);
           background-repeat: no-repeat;
-          background-size: 20px;
-          width: 20px;
-          height: 20px;
-          left: -25px;
-            bottom: -3px;
+          background-size: 25px;
+          width: 25px;
+          height: 25px;
+          left: -30px;
+          bottom: -2px;
           @include on-tablet {
             background-size: 28px;
             width: 28px;

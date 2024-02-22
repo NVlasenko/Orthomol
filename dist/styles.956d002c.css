@@ -649,7 +649,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   }
 }
 .header__info {
-  margin-top: 130px;
+  margin-top: 152px;
   margin-left: 10px;
 }
 @media (min-width: 744px) {
@@ -667,11 +667,11 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   color: #0b3373;
   position: relative;
   z-index: 2;
-  font-size: 27px;
+  font-size: 32px;
   font-weight: 400;
   text-align: left;
   letter-spacing: -1px;
-  line-height: 39px;
+  line-height: 53px;
 }
 @media (min-width: 744px) {
   .header__title {
@@ -693,9 +693,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   font-size: 20px;
   z-index: 2;
   position: relative;
-  width: 275px;
+  width: 300px;
   text-align: left;
-  line-height: 20px;
+  line-height: 25px;
   margin-top: 18px;
 }
 @media (min-width: 744px) {
@@ -726,16 +726,16 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   background-color: #0b3373;
   cursor: pointer;
   text-align: center;
-  width: 141px;
-  height: 45px;
+  width: 160px;
+  height: 55px;
   border-radius: 34px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 22px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 @media (min-width: 744px) {
   .header__button {
@@ -766,7 +766,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 .header__productInfo {
   position: absolute;
-  bottom: 85px;
+  bottom: 120px;
   right: 70px;
 }
 @media (min-width: 744px) {
@@ -784,8 +784,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 .header__productInfo--item {
   position: relative;
   list-style-type: none;
-  font-size: 17px;
-  line-height: 10px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 600;
   color: #d5dbb4;
   margin-top: 18px;
@@ -809,11 +809,11 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   position: absolute;
   background-image: url(/mark.37229f46.svg);
   background-repeat: no-repeat;
-  background-size: 20px;
-  width: 20px;
-  height: 20px;
-  left: -25px;
-  bottom: -3px;
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+  left: -30px;
+  bottom: -2px;
 }
 @media (min-width: 744px) {
   .header__productInfo--item::before {
