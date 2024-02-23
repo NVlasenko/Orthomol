@@ -668,6 +668,11 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     margin-top: 200px;
   }
 }
+@media (min-width: 1500px) {
+  .header__info {
+    margin-left: 0;
+  }
+}
 .header__title {
   color: #0b3373;
   position: relative;

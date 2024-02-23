@@ -22,6 +22,9 @@
     @include on-desktop {
       margin-top: 200px;
     }
+    @include on-large {
+      margin-left: 0;
+    }
   }
   &__title {
     color: $mainTextColor;
