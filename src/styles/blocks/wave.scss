@@ -1,15 +1,26 @@
 .wave {
   position: relative;
-
+  top: 200px;
+  @include on-tablet {
+   top: 250px;
+  }
+  @include on-desktop {
+    top: 15px;
+  }
+  @include on-large {
+    top: 390px;
+  }
   &__one {
     position: absolute;
-    display: none;
+    display: block;
+    left: 50px;
+    transform: auto;
+    margin-top: 0;
     @include on-tablet {
-      // display: block;
-      // top: 50%;
-      // left: 5%;
-      // transform: translate(-50%, -50%);
-      // margin-top: 176px;
+      top: 170px;
+      left: 20px;
+      transform: auto;
+      margin-top: 0;
     }
     @include on-desktop {
       display: block;
@@ -22,10 +33,14 @@
   &__two {
     display: none;
     position: absolute;
+    display: block;
+    left: 150px;
+    transform: auto;
+    margin-top: 0;
     @include on-tablet {
-      // display: block;
-      // top: 200px;
-      // left: 80px;
+      display: block;
+      top: 190px;
+      left: 170px;
     }
     @include on-desktop {
       display: block;
@@ -36,8 +51,16 @@
   &__three {
     display: none;
     position: absolute;
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 250px;
+    transform: auto;
+    margin-top: 0;
     @include on-tablet {
-      display: none;
+      display: block;
+      top: 190px;
+      left: 80px;
     }
     @include on-desktop {
       display: block;
@@ -49,7 +72,9 @@
     display: none;
     position: absolute;
     @include on-tablet {
-      display: none;
+      display: block;
+      top: 150px;
+      left: 230px;
     }
     @include on-desktop {
       display: block;
@@ -61,7 +86,9 @@
     display: none;
     position: absolute;
     @include on-tablet {
-      display: none;
+      display: block;
+      top: 150px;
+      left: 60px;
     }
     @include on-desktop {
       display: block;
@@ -73,7 +100,9 @@
     display: none;
     position: absolute;
     @include on-tablet {
-      display: none;
+      display: block;
+      top: 140px;
+      left: 310px;
     }
     @include on-desktop {
       display: block;
@@ -85,7 +114,9 @@
     display: none;
     position: absolute;
     @include on-tablet {
-      display: none;
+      display: block;
+      top: 170px;
+      left: 300px;
     }
     @include on-desktop {
       display: block;

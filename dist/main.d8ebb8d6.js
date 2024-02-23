@@ -154,7 +154,7 @@ window.addEventListener('load', function () {
   welcomeImage.style.display = 'block';
   setTimeout(function () {
     welcomeImage.style.transform = 'translateY(-100%)';
-  }, 4000);
+  }, 2000);
 });
 
 // === welcome image end ===
@@ -183,7 +183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56231" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56717" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

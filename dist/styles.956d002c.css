@@ -30,7 +30,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1500px) {
   .container {
-    padding: 0 400px;
+    padding: 0 300px;
   }
 }
 
@@ -75,6 +75,15 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     left: 50px;
   }
 }
+@media (min-width: 1500px) {
+  .moving-container--cloudFirst {
+    background-size: 350px;
+    width: 350px;
+    height: 100px;
+    top: 150px;
+    left: 50px;
+  }
+}
 .moving-container--cloudSecond {
   -webkit-animation: moveCloudSecond 55s linear infinite;
           animation: moveCloudSecond 55s linear infinite;
@@ -105,6 +114,15 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     left: 50px;
   }
 }
+@media (min-width: 1500px) {
+  .moving-container--cloudSecond {
+    background-size: 350px;
+    width: 350px;
+    height: 100px;
+    top: 300px;
+    left: 550px;
+  }
+}
 .moving-container--cloudThirty {
   -webkit-animation: moveCloudThirty 45s linear infinite;
           animation: moveCloudThirty 45s linear infinite;
@@ -132,6 +150,15 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     width: 250px;
     height: 45px;
     top: 300px;
+    left: 50px;
+  }
+}
+@media (min-width: 1500px) {
+  .moving-container--cloudThirty {
+    background-size: 300px;
+    width: 300px;
+    height: 100px;
+    top: 450px;
     left: 50px;
   }
 }
@@ -306,10 +333,39 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 
 .wave {
   position: relative;
+  top: 200px;
+}
+@media (min-width: 744px) {
+  .wave {
+    top: 250px;
+  }
+}
+@media (min-width: 1280px) {
+  .wave {
+    top: 15px;
+  }
+}
+@media (min-width: 1500px) {
+  .wave {
+    top: 390px;
+  }
 }
 .wave__one {
   position: absolute;
-  display: none;
+  display: block;
+  left: 50px;
+  -webkit-transform: auto;
+          transform: auto;
+  margin-top: 0;
+}
+@media (min-width: 744px) {
+  .wave__one {
+    top: 170px;
+    left: 20px;
+    -webkit-transform: auto;
+            transform: auto;
+    margin-top: 0;
+  }
 }
 @media (min-width: 1280px) {
   .wave__one {
@@ -324,6 +380,18 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 .wave__two {
   display: none;
   position: absolute;
+  display: block;
+  left: 150px;
+  -webkit-transform: auto;
+          transform: auto;
+  margin-top: 0;
+}
+@media (min-width: 744px) {
+  .wave__two {
+    display: block;
+    top: 190px;
+    left: 170px;
+  }
 }
 @media (min-width: 1280px) {
   .wave__two {
@@ -335,10 +403,19 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 .wave__three {
   display: none;
   position: absolute;
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 250px;
+  -webkit-transform: auto;
+          transform: auto;
+  margin-top: 0;
 }
 @media (min-width: 744px) {
   .wave__three {
-    display: none;
+    display: block;
+    top: 190px;
+    left: 80px;
   }
 }
 @media (min-width: 1280px) {
@@ -354,7 +431,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 744px) {
   .wave__four {
-    display: none;
+    display: block;
+    top: 150px;
+    left: 230px;
   }
 }
 @media (min-width: 1280px) {
@@ -370,7 +449,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 744px) {
   .wave__five {
-    display: none;
+    display: block;
+    top: 150px;
+    left: 60px;
   }
 }
 @media (min-width: 1280px) {
@@ -386,7 +467,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 744px) {
   .wave__six {
-    display: none;
+    display: block;
+    top: 140px;
+    left: 310px;
   }
 }
 @media (min-width: 1280px) {
@@ -402,7 +485,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 744px) {
   .wave__seven {
-    display: none;
+    display: block;
+    top: 170px;
+    left: 300px;
   }
 }
 @media (min-width: 1280px) {
@@ -565,6 +650,11 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     font-size: 50px;
   }
 }
+@media (min-width: 1500px) {
+  .welcome__text {
+    font-size: 80px;
+  }
+}
 
 .loader {
   display: -webkit-box;
@@ -642,12 +732,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 .header {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(90%, rgb(255, 255, 255))), url(/bg.a05c757d.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgb(255, 255, 255) 90%), url(/bg.a05c757d.jpg);
+  background-image: url(/bg.a05c757d.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   background-position: top left;
+  overflow: hidden;
 }
 @media (min-width: 744px) {
   .header {
@@ -730,6 +820,17 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     margin-top: 14px;
   }
 }
+@media (min-width: 1500px) {
+  .header__subtitle {
+    width: 375px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 50px;
+  }
+}
 .header__button {
   display: block;
   -webkit-transition: all 1s ease-in-out;
@@ -767,10 +868,17 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     margin-top: 38px;
   }
 }
+@media (min-width: 1500px) {
+  .header__button {
+    width: 300px;
+    height: 70px;
+    font-size: 22px;
+    line-height: 22px;
+    margin-top: 100px;
+  }
+}
 .header__button:hover {
   background-color: #275aac;
-  -webkit-box-shadow: 10px 10px 10px rgba(96, 143, 224, 0.2);
-          box-shadow: 10px 10px 10px rgba(96, 143, 224, 0.2);
 }
 .header__btn {
   color: #fff;
@@ -793,6 +901,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     right: 130px;
   }
 }
+@media (min-width: 1500px) {
+  .header__productInfo {
+    bottom: 60px;
+    right: 10%;
+  }
+}
 .header__productInfo--item {
   position: relative;
   list-style-type: none;
@@ -806,14 +920,21 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   .header__productInfo--item {
     font-size: 18px;
     line-height: 13px;
+    color: #d5dbb4;
   }
 }
 @media (min-width: 1280px) {
   .header__productInfo--item {
     font-size: 24px;
     line-height: 29px;
-    color: #d5dbb4;
     margin-top: 18px;
+  }
+}
+@media (min-width: 1500px) {
+  .header__productInfo--item {
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 20px;
   }
 }
 .header__productInfo--item::before {
@@ -843,6 +964,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     height: 40px;
     left: -50px;
     bottom: -6px;
+  }
+}
+@media (min-width: 1500px) {
+  .header__productInfo--item::before {
+    bottom: -3px;
+    left: -55px;
   }
 }
 

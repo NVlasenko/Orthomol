@@ -26,6 +26,13 @@
       top: 100px;
       left: 50px;
     }
+    @include on-large {
+      background-size: 350px;
+      width: 350px;
+      height: 100px;
+      top: 150px;
+      left: 50px;;
+    }
   }
 
 
@@ -53,6 +60,13 @@
         top: 200px;
         left: 50px;
       }
+      @include on-large {
+        background-size: 350px;
+        width: 350px;
+        height: 100px;
+        top: 300px;
+        left: 550px;;
+      }
     }
     &--cloudThirty {
       animation: moveCloudThirty 45s linear infinite;
@@ -77,6 +91,13 @@
         height: 45px;
         top: 300px;
         left: 50px;
+      }
+      @include on-large {
+        background-size: 300px;
+        width: 300px;
+        height: 100px;
+        top: 450px;
+        left: 50px;;
       }
     }
   }
