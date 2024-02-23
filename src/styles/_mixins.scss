@@ -10,6 +10,12 @@
   }
 }
 
+@mixin on-large {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
 @mixin pageGrid {
   --columns: 2;
   display: grid;

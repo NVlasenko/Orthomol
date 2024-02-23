@@ -10,4 +10,8 @@
   @include on-desktop {
     padding: 0 123px;
   }
+
+  @include on-large {
+    padding: 0 400px;
+  }
 }

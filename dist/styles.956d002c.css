@@ -28,6 +28,11 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     padding: 0 123px;
   }
 }
+@media (min-width: 1500px) {
+  .container {
+    padding: 0 400px;
+  }
+}
 
 @font-face {
   font-family: Oddval;
@@ -767,7 +772,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 .header__productInfo {
   position: absolute;
   bottom: 120px;
-  right: 70px;
+  right: 43px;
 }
 @media (min-width: 744px) {
   .header__productInfo {
@@ -784,7 +789,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 .header__productInfo--item {
   position: relative;
   list-style-type: none;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 600;
   color: #d5dbb4;

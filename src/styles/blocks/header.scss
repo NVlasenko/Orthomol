@@ -115,7 +115,7 @@
   &__productInfo {
     position: absolute;
     bottom: 120px;
-    right: 70px;
+    right: 43px;
     @include on-tablet {
       bottom: 50px;
       right: 70px;
@@ -128,7 +128,7 @@
       &--item {
         position: relative;
         list-style-type: none;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 20px;
         font-weight: 600;
         color: #d5dbb4;
