@@ -333,7 +333,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 
 .wave {
   position: relative;
-  top: 200px;
+  top: 230px;
 }
 @media (min-width: 744px) {
   .wave {
@@ -919,7 +919,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   font-size: 18px;
   line-height: 20px;
   font-weight: 600;
-  color: #768b00;
+  color: #353e04;
   margin-top: 18px;
 }
 @media (min-width: 744px) {
