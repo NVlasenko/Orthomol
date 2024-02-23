@@ -333,11 +333,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 
 .wave {
   position: relative;
-  top: 230px;
 }
 @media (min-width: 744px) {
   .wave {
-    top: 250px;
+    top: 403px;
   }
 }
 @media (min-width: 1280px) {
@@ -352,11 +351,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 .wave__one {
   position: absolute;
-  display: block;
-  left: 50px;
-  -webkit-transform: auto;
-          transform: auto;
-  margin-top: 0;
+  display: none;
 }
 @media (min-width: 744px) {
   .wave__one {
@@ -378,13 +373,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   }
 }
 .wave__two {
-  display: none;
   position: absolute;
-  display: block;
-  left: 150px;
-  -webkit-transform: auto;
-          transform: auto;
-  margin-top: 0;
+  display: none;
 }
 @media (min-width: 744px) {
   .wave__two {
@@ -403,13 +393,6 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 .wave__three {
   display: none;
   position: absolute;
-  position: absolute;
-  display: block;
-  top: 10px;
-  left: 250px;
-  -webkit-transform: auto;
-          transform: auto;
-  margin-top: 0;
 }
 @media (min-width: 744px) {
   .wave__three {
@@ -741,7 +724,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 744px) {
   .header {
-    background-position: auto;
+    background-position: right;
     background-image: url(/bg.a05c757d.jpg);
   }
 }
@@ -892,7 +875,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 .header__productInfo {
   position: absolute;
-  bottom: 120px;
+  bottom: 80px;
   right: 43px;
 }
 @media (min-width: 744px) {
