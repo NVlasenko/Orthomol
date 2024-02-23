@@ -642,15 +642,17 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 .header {
   height: 100vh;
-  background-image: url(../images/bg/bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(90%, rgb(255, 255, 255))), url(../images/bg/bg.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgb(255, 255, 255) 90%), url(../images/bg/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background-position: left;
+  background-position: top left;
 }
 @media (min-width: 744px) {
   .header {
     background-position: auto;
+    background-image: url(../images/bg/bg.jpg);
   }
 }
 .header__info {
@@ -797,7 +799,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   font-size: 18px;
   line-height: 20px;
   font-weight: 600;
-  color: #d5dbb4;
+  color: #768b00;
   margin-top: 18px;
 }
 @media (min-width: 744px) {
