@@ -25,7 +25,8 @@
       margin-top: 200px;
     }
     @include on-large {
-      margin-left: 0;
+      margin-top: 255px;
+      margin-left: 20px;
     }
   }
   &__title {
@@ -48,8 +49,8 @@
       margin-top: 14px;
     }
     @include on-large {
-      font-size: 80px;
-      line-height: 106px;
+      font-size: 70px;
+      line-height: 100px;
     }
   }
 
@@ -81,12 +82,12 @@
     }
     @include on-large {
       width: 375px;
-      font-size: 25px;
+      font-size: 23px;
       font-weight: 400;
       line-height: 40px;
       letter-spacing: 0em;
       text-align: left;
-      margin-top: 50px;
+      margin-top: 45px;
     }
   }
 
@@ -124,7 +125,7 @@
       height: 70px;
       font-size: 22px;
       line-height: 22px;
-      margin-top: 100px;
+      margin-top: 90px;
     }
     &:hover {
       background-color: #275aac;

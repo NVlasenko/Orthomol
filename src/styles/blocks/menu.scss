@@ -1,5 +1,5 @@
 .menu {
-  background-color: #dfe3bf;
+  background-color: rgba(223, 227, 191, 0.8);
   border: 2px solid #f8fAe2;
   position: fixed;
   border-radius: 90px;
@@ -15,12 +15,18 @@
   @include on-desktop {
     top: 15px;
   }
+  @include on-large {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
+    opacity: 1;
     @include on-tablet {
       padding: 13px 20px;
     }

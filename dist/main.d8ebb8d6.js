@@ -157,7 +157,65 @@ window.addEventListener('load', function () {
   }, 2000);
 });
 
-// === welcome image end ===
+// === welcome image end === 
+
+// === carousel start ===
+var arrowLeft = document.querySelector('.catalog__arrow--left');
+var arrowRight = document.querySelector('.catalog__arrow--right');
+var productsContainer = document.querySelector('.product__container');
+var allCards = document.querySelectorAll('.product__card');
+var cardWidth = document.querySelector('.product__card').offsetWidth + parseInt(window.getComputedStyle(document.querySelector('.product__card')).marginRight);
+var isScrolling = false;
+function checkScrollEnd() {
+  var isAtEnd = productsContainer.scrollWidth - (productsContainer.scrollLeft + productsContainer.clientWidth) <= 0;
+  if (isAtEnd) {
+    allCards[allCards.length - 1].style.marginRight = '0px';
+  } else {
+    allCards[allCards.length - 1].style.marginRight = "".concat(cardWidth - allCards[0].offsetWidth, "px");
+  }
+}
+arrowLeft.addEventListener('click', function () {
+  if (!isScrolling) {
+    isScrolling = true;
+    productsContainer.scrollBy({
+      left: -cardWidth,
+      top: 0,
+      behavior: 'smooth'
+    });
+    setTimeout(function () {
+      isScrolling = false;
+      checkScrollEnd();
+    }, 400);
+  }
+});
+arrowRight.addEventListener('click', function () {
+  if (!isScrolling) {
+    isScrolling = true;
+    productsContainer.scrollBy({
+      left: cardWidth,
+      top: 0,
+      behavior: 'smooth'
+    });
+    setTimeout(function () {
+      isScrolling = false;
+      checkScrollEnd();
+    }, 400);
+  }
+});
+function preventScroll(e) {
+  if (isScrolling) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+}
+productsContainer.addEventListener('wheel', preventScroll, {
+  passive: false
+});
+productsContainer.addEventListener('touchmove', preventScroll, {
+  passive: false
+});
+
+// === carousel end ===
 },{}],"../../../../.nvm/versions/node/v14.21.3/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -183,7 +241,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56717" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49341" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
