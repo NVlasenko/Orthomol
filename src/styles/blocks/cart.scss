@@ -1,0 +1,115 @@
+.cart {
+  &__container {
+    border-radius: 34px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    position: fixed;
+    z-index: 25;
+    transform: translateX(200%); 
+    transition: 1s all ease-in-out;
+    @include on-desktop {
+      width: 350px;
+      min-height: 300px;
+      padding: 25px;
+      top: 95px;
+      right: 37px;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: left;
+    @include on-desktop {
+      font-size: 30px;
+      line-height: 80px;
+    }
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__close {
+   cursor: pointer;
+  }
+&__footer {
+  padding-top: 10px;
+}
+  &__total {
+    font-weight: 600;
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: space-between;
+    @include on-desktop {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 96px;
+    }
+  }
+
+  &__checkout {
+    width: 100%;
+    padding: 18px, 0px, 19px, 0px;
+    border-radius: 34px;
+    background-color: $mainTextColor;
+    border: $mainTextColor;
+    font-weight: 600;
+    color: #fff;
+    &:hover {
+      background-color: #275aac;
+    }
+    @include on-desktop {
+      height: 59px;
+      line-height: 22px;
+      font-size: 18px;
+    }
+  }
+
+  &__product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include on-desktop {
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include on-desktop {
+      gap: 30px;
+    }
+    &--img {
+  
+      @include on-desktop {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    &--title {
+      font-weight: 600;
+      @include on-desktop {
+        font-size: 15px;
+        line-height: 29px;
+      }
+    }
+
+    &--price {
+      font-weight: 600;
+      @include on-desktop {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 35px;
+      }
+    }
+
+    &--minus,
+    &--plus {
+      border-radius: 100%;
+      background-color: #fff;
+    }
+  }
+}

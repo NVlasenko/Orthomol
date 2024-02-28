@@ -216,6 +216,109 @@ productsContainer.addEventListener('touchmove', preventScroll, {
 });
 
 // === carousel end ===
+
+document.addEventListener('DOMContentLoaded', function () {
+  var addToCartButtons = document.querySelectorAll('.product__basket');
+  var cart = document.querySelector('.menu__price--location .menu__amount');
+  var cartContent = document.querySelector('#cartItems');
+  var cartTotal = 0;
+  var cartItems = [];
+  if (localStorage.getItem('cartItems')) {
+    cartItems = JSON.parse(localStorage.getItem('cartItems'));
+    updateCartContent();
+  }
+  addToCartButtons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      var productCard = button.closest('.product__card');
+      addToCart(productCard);
+    });
+  });
+  function calculateTotal() {
+    if (Array.isArray(cartItems) && cartItems.length > 0) {
+      return cartItems.reduce(function (total, item) {
+        var itemTotal = typeof item.price === 'number' && typeof item.quantity === 'number' ? item.price * item.quantity : 0;
+        return total + itemTotal;
+      }, 0);
+    } else {
+      console.error('cartItems is not an array or empty', cartItems);
+      return 0;
+    }
+  }
+  updateTotalPrice();
+  function addToCart(productCard) {
+    var id = productCard.getAttribute('id');
+    var imgSrc = productCard.querySelector('.product__img').src;
+    var title = productCard.querySelector('.product__title').textContent;
+    var priceText = productCard.querySelector('.product__price').textContent;
+    var price = parseFloat(priceText.replace(/[^0-9.-]+/g, ""));
+    var existingItem = cartItems.find(function (item) {
+      return item.id === id;
+    });
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cartItems.push({
+        id: id,
+        imgSrc: imgSrc,
+        title: title,
+        price: price,
+        quantity: 1
+      });
+    }
+    cartTotal += price;
+    cart.textContent = "".concat(cartTotal);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    updateCartContent();
+  }
+  console.log(cart.textContent);
+  function updateCartContent() {
+    cartContent.innerHTML = '';
+    cartItems.forEach(function (item, index) {
+      var itemElement = document.createElement('div');
+      itemElement.classList.add('cart__product');
+      itemElement.innerHTML = "\n          <img src=\"".concat(item.imgSrc, "\" alt=\"").concat(item.title, "\" class=\"cart__item--img\">\n          <div>\n            <h4 class=\"cart__item--title\">").concat(item.title, "</h4>\n            <p class=\"cart__item--price\">").concat(item.price, " \u0433\u0440\u043D</p>\n            <button class=\"cart__item--minus\" data-index=\"").concat(index, "\">-</button>\n             &nbsp; ").concat(item.quantity, " &nbsp;\n            <button class=\"cart__item--plus\" data-index=\"").concat(index, "\">+</button>\n          </div>\n        ");
+      cartContent.appendChild(itemElement);
+      itemElement.querySelector('.cart__item--minus').addEventListener('click', function () {
+        return updateQuantity(index, -1);
+      });
+      itemElement.querySelector('.cart__item--plus').addEventListener('click', function () {
+        return updateQuantity(index, 1);
+      });
+    });
+    updateTotalPrice();
+  }
+  function updateQuantity(index, change) {
+    if (cartItems[index]) {
+      cartItems[index].quantity += change;
+      if (cartItems[index].quantity <= 0) {
+        cartItems.splice(index, 1);
+      }
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      updateCartContent();
+    }
+  }
+  function updateTotalPrice() {
+    var total = calculateTotal();
+    var cartTotalPriceElement = document.querySelector('#cartTotalPrice');
+    if (cartTotalPriceElement) {
+      cartTotalPriceElement.textContent = "".concat(total, " \u0433\u0440\u043D");
+    }
+    var menuAmountElement = document.querySelector('.menu__amount');
+    if (menuAmountElement) {
+      menuAmountElement.textContent = "".concat(total, " \u0433\u0440\u043D");
+    }
+  }
+});
+var openBasket = document.querySelector('.menu__price--location');
+var closeBasket = document.querySelector('.cart__close');
+var basket = document.querySelector('.cart__container');
+openBasket.addEventListener('click', function () {
+  basket.style.transform = 'translateX(0)';
+});
+closeBasket.addEventListener('click', function () {
+  basket.style.transform = 'translateX(200%)';
+});
 },{}],"../../../../.nvm/versions/node/v14.21.3/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -241,7 +344,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49341" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59134" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

@@ -53,14 +53,12 @@
     overflow-y: visible;
     position: relative;
     @include on-desktop {
-      margin-top: 160px;
-      // gap: 20px;
+      padding-top: 160px;
     }
   }
 
   &__info {
     @include on-desktop {
-      // margin-top: -100px;
       margin-top: 100px;
     }
   }
@@ -76,7 +74,6 @@
     @include on-desktop {
       flex: 0 0 auto;
       width: 283px;
-      // height: 100%;
       border-radius: 34px;
       padding: 15px;
       margin-right: 20px;
@@ -134,6 +131,7 @@
     width: 100%;
     display: flex;
     background-color: #b7C029;
+    border: #b7C029;
     border-radius: 34px;
     justify-content: center;
     align-items: center;
