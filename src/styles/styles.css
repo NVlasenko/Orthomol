@@ -341,12 +341,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .wave {
-    top: 0;
+    top: 33px;
   }
 }
 @media (min-width: 1500px) {
   .wave {
-    top: -33px;
+    top: 400px;
   }
 }
 .wave__one {
@@ -734,6 +734,11 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     height: 850px;
   }
 }
+@media (min-width: 1500px) {
+  .header {
+    height: 100vh;
+  }
+}
 .header__info {
   margin-top: 152px;
   margin-left: 10px;
@@ -751,8 +756,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1500px) {
   .header__info {
-    margin-top: 123px;
-    margin-left: 20px;
+    margin-top: 183px;
+    margin-left: 0;
   }
 }
 .header__title {
@@ -1448,11 +1453,11 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   -webkit-transition: 1s all ease-in-out;
   transition: 1s all ease-in-out;
   overflow-y: auto;
+  height: 100vh;
 }
 @media (min-width: 1280px) {
   .cart__container {
     width: 400px;
-    min-height: 400px;
     padding: 25px;
     top: 10px;
     right: 37px;

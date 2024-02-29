@@ -14,6 +14,9 @@
   @include on-desktop {
     height: 850px;
   }
+  @include on-large {
+    height: 100vh;
+  }
 
   &__info {
     margin-top: 152px;
@@ -26,8 +29,8 @@
       margin-top: 200px;
     }
     @include on-large {
-      margin-top: 123px;
-      margin-left: 20px;
+      margin-top: 183px;
+      margin-left: 0;
     }
   }
   &__title {
