@@ -7,12 +7,14 @@
     z-index: 25;
     transform: translateX(200%); 
     transition: 1s all ease-in-out;
+    overflow-y: auto;
     @include on-desktop {
-      width: 350px;
-      min-height: 300px;
+      width: 400px;
+      min-height: 400px;
       padding: 25px;
-      top: 95px;
+      top: 10px;
       right: 37px;
+      bottom: 10px;
     }
   }
   &__title {
@@ -92,8 +94,8 @@
     &--title {
       font-weight: 600;
       @include on-desktop {
-        font-size: 15px;
-        line-height: 29px;
+        font-size: 16px;
+        line-height: 24px;
       }
     }
 
@@ -111,5 +113,10 @@
       border-radius: 100%;
       background-color: #fff;
     }
+  }
+
+  &__deleteBasket {
+    text-decoration: none;
+    color: #000;
   }
 }

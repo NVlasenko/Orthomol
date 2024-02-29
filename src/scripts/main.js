@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const addToCartButtons = document.querySelectorAll('.product__basket');
   const cart = document.querySelector('.menu__price--location .menu__amount');
   const cartContent = document.querySelector('#cartItems');
+  const deleteBasket = document.querySelector('.cart__deleteBasket');
   let cartTotal = 0;
   let cartItems = [];
 
@@ -202,6 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
       menuAmountElement.textContent = `${total} грн`;
     }
   }
+
+  deleteBasket.addEventListener('click', () => {
+    cartItems = [];
+    localStorage.removeItem('cartItems'); 
+    updateCartContent(); 
+  });
 });
 
 

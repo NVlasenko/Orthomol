@@ -22,7 +22,7 @@
       margin-left: 70px;
     }
     @include on-desktop {
-      margin-top: 200px;
+      margin-top: 136px;
     }
     @include on-large {
       margin-top: 255px;
@@ -43,9 +43,9 @@
       line-height: 45px;
     }
     @include on-desktop {
-      font-size: 70px;
+      font-size: 62px;
       font-weight: 600;
-      line-height: 76px;
+      line-height: 73px;
       margin-top: 14px;
     }
     @include on-large {

@@ -740,7 +740,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .header__info {
-    margin-top: 200px;
+    margin-top: 136px;
   }
 }
 @media (min-width: 1500px) {
@@ -767,9 +767,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .header__title {
-    font-size: 70px;
+    font-size: 62px;
     font-weight: 600;
-    line-height: 76px;
+    line-height: 73px;
     margin-top: 14px;
   }
 }
@@ -1441,14 +1441,16 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
           transform: translateX(200%);
   -webkit-transition: 1s all ease-in-out;
   transition: 1s all ease-in-out;
+  overflow-y: auto;
 }
 @media (min-width: 1280px) {
   .cart__container {
-    width: 350px;
-    min-height: 300px;
+    width: 400px;
+    min-height: 400px;
     padding: 25px;
-    top: 95px;
+    top: 10px;
     right: 37px;
+    bottom: 10px;
   }
 }
 .cart__title {
@@ -1558,8 +1560,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .cart__item--title {
-    font-size: 15px;
-    line-height: 29px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 .cart__item--price {
@@ -1575,6 +1577,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 .cart__item--minus, .cart__item--plus {
   border-radius: 100%;
   background-color: #fff;
+}
+.cart__deleteBasket {
+  text-decoration: none;
+  color: #000;
 }
 
 /*# sourceMappingURL=/styles.956d002c.css.map */
