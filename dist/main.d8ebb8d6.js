@@ -138,13 +138,33 @@ function setMenuWidth() {
 // === open menu start ===
 var openMenu = document.querySelector('#menuOpen');
 var menuActive = document.querySelector('.menuActive');
+var menu = document.querySelector('.menu');
 var closeMenu = document.querySelector('#close');
 openMenu.addEventListener('click', function () {
   menuActive.style.transform = 'translateX(0)';
+  menu.style.display = 'none';
+  disableScroll();
 });
 closeMenu.addEventListener('click', function () {
-  menuActive.style.transform = 'translateX(-200%)';
+  menuActive.style.transform = 'translateX(-100%)';
+  enableScroll();
+  menu.style.display = 'block';
 });
+function disableScroll() {
+  var scrollY = window.scrollY;
+  document.body.style.overflow = 'hidden';
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.top = "-".concat(scrollY, "px");
+}
+function enableScroll() {
+  document.body.style.overflow = '';
+  document.documentElement.style.overflow = '';
+  var scrollY = parseInt(document.body.style.top || '0');
+  document.body.style.position = '';
+  document.body.style.top = '';
+  window.scrollTo(0, scrollY);
+}
 
 // === open menu end === 
 
@@ -350,7 +370,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60501" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62509" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

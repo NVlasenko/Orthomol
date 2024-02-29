@@ -1,6 +1,6 @@
 .menuActive {
   transform: translateX(-200%);
-  transition: 2s all ease;
+  transition: 0.8s all ease;
   background-image: url(../images/bg/bgMenuOpen.png);
   background-size: cover;
   position: absolute;
@@ -23,6 +23,7 @@
     margin: 0;
     transform: translateX(-50%); 
     box-sizing: border-box;
+
       @include on-tablet {
 
       }

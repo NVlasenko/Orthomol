@@ -7,8 +7,6 @@
   overflow: hidden;
   height: 700px;
   @include on-tablet {
-    background-position: right;
-    background-image: url(../images/bg/bg.jpg);
     height: 800px;
   }
   @include on-desktop {
