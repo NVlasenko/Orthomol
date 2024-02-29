@@ -728,7 +728,6 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background-position: top top;
   overflow: hidden;
   height: 100vh;
 }
