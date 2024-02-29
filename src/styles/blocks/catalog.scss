@@ -1,7 +1,12 @@
 .catalog {
-  background-color: #c6dbE5;
+  background-image: url(../images/bg/bgCatalog.png);
+  background-position: center;
+  background-size: cover;
   padding-top: 155px;
-  height: 1018px;
+  height: 100vh;
+  @include on-extra-large {
+    padding-top: 270px;
+  }
   &__title {
     @include on-desktop {
       font-size: 40px;
@@ -10,6 +15,9 @@
       letter-spacing: 0em;
       text-align: left;
       color: $mainTextColor;
+    }
+    @include on-extra-large {
+      font-size: 70px;
     }
   }
   &__top {
@@ -33,12 +41,20 @@
       height: 60px;
       background-size: 60px;
       cursor: pointer;
+      @include on-extra-large {
+        width: 70px;
+        height: 70px;
+      }
     }
     &--right {
       width: 60px;
       height: 60px;
       background-size: 60px;
       cursor: pointer;
+      @include on-extra-large {
+        width: 70px;
+        height: 70px;
+      }
     }
   }
 }
@@ -54,6 +70,9 @@
     position: relative;
     @include on-desktop {
       padding-top: 160px;
+    }
+    @include on-extra-large {
+      padding-top: 280px;
     }
   }
 
@@ -78,6 +97,9 @@
       padding: 15px;
       margin-right: 20px;
     }
+    @include on-extra-large {
+      width: 314px;
+    }
   }
 
   &__img {
@@ -88,6 +110,11 @@
       width: 230px;
       height: 230px;
       top: -110px;
+    }
+    @include on-extra-large {
+      width: 240px;
+      height: 250px;
+      top: -140px;
     }
   }
 
@@ -101,17 +128,29 @@
       line-height: 29px;
       height: 60px;
     }
+
+    @include on-extra-large {
+      font-size: 23px;
+      line-height: 30px;
+      height: 60px;
+    }
   }
 
   &__subtitle {
     letter-spacing: 0em;
     text-align: left;
     color:#535353;
+    font-weight: 600;
     @include on-desktop {
       margin-top: 10px;
       font-size: 14px;
-      font-weight: 600;
       line-height: 25px;
+    }
+    @include on-extra-large {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 27px;
     }
   }
 
@@ -124,6 +163,10 @@
       font-size: 20px;
       line-height: 29px;
       margin-top: 40px;
+    }
+    @include on-extra-large {
+      font-size: 23px;
+      line-height: 29px;
     }
   }
 

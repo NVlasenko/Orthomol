@@ -8,14 +8,20 @@
     transform: translateX(200%); 
     transition: 1s all ease-in-out;
     overflow-y: auto;
-    height: 100vh;
-    @include on-desktop {
-      width: 400px;
   
+    @include on-desktop {
+      width: 500px;
       padding: 25px;
-      top: 10px;
+      top: 30px;
       right: 37px;
-      bottom: 10px;
+      bottom: 30px;
+    }
+    @include on-extra-large {
+      width: 500px;
+      padding: 25px;
+      top: 30px;
+      right: 37px;
+      bottom: 200px;
     }
   }
   &__title {
@@ -26,6 +32,10 @@
       font-size: 30px;
       line-height: 80px;
     }
+    @include on-extra-large {
+      font-size: 40px;
+      line-height: 70px;
+    }
   }
   &__header {
     display: flex;
@@ -35,9 +45,16 @@
 
   &__close {
    cursor: pointer;
+   @include on-extra-large {
+    width: 60px;
+    height: 60px;
+  }
   }
 &__footer {
   padding-top: 10px;
+  @include on-extra-large {
+    padding-top: 20px;
+  }
 }
   &__total {
     font-weight: 600;
@@ -48,6 +65,9 @@
       font-size: 24px;
       font-weight: 600;
       line-height: 96px;
+    }
+    @include on-extra-large {
+     font-size: 26px;
     }
   }
 
@@ -119,5 +139,8 @@
   &__deleteBasket {
     text-decoration: none;
     color: #000;
+    @include on-extra-large {
+      font-size: 25px;
+    }
   }
 }
