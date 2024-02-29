@@ -2,19 +2,32 @@
   background-image: url(../images/bg/bgCatalog.png);
   background-position: center;
   background-size: cover;
-  padding-top: 155px;
-  height: 100vh;
+  padding-top: 70px;
+  height: 600px;
+  @include on-tablet {
+    padding-top: 70px;
+    height: 700px;
+   }
+   @include on-desktop {
+   height: 800px;
+  }
   @include on-extra-large {
     padding-top: 270px;
   }
   &__title {
+    letter-spacing: 0em;
+    text-align: left;
+    color: $mainTextColor;
+    font-size: 20px;
+    @include on-tablet {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 48px;
+     }
     @include on-desktop {
       font-size: 40px;
       font-weight: 600;
       line-height: 48px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: $mainTextColor;
     }
     @include on-extra-large {
       font-size: 70px;
@@ -32,25 +45,37 @@
 
   &__arrow {
     display: flex;
-    @include on-desktop {
+    gap: 10px;
+    @include on-tablet {
       gap: 15px;
+     }
+    @include on-desktop {
+     
     }
 
     &--left {
-      width: 60px;
-      height: 60px;
-      background-size: 60px;
+      width: 40px;
+      height: 40px;
+      background-size: 40px;
       cursor: pointer;
+      @include on-tablet {
+        width: 50px;
+        height: 50px;
+       }
       @include on-extra-large {
         width: 70px;
         height: 70px;
       }
     }
     &--right {
-      width: 60px;
-      height: 60px;
-      background-size: 60px;
+      width: 40px;
+      height: 40px;
+      background-size: 40px;
       cursor: pointer;
+      @include on-tablet {
+        width: 50px;
+        height: 50px;
+       }
       @include on-extra-large {
         width: 70px;
         height: 70px;
@@ -68,8 +93,15 @@
     overflow-x: hidden;
     overflow-y: visible;
     position: relative;
+    padding-top: 120px;
+    gap: 20px;
+    @include on-tablet {
+      padding-top: 100px;
+      gap: 30px;
+     }
     @include on-desktop {
       padding-top: 160px;
+      gap: 0;
     }
     @include on-extra-large {
       padding-top: 280px;
@@ -77,6 +109,10 @@
   }
 
   &__info {
+    margin-top: 70px;
+    @include on-tablet {
+      margin-top: 50px;
+     }
     @include on-desktop {
       margin-top: 100px;
     }
@@ -90,11 +126,16 @@
     align-items: center;
     box-sizing: border-box; 
     position: relative;
+    flex: 0 0 auto;
+    border-radius: 34px;
+    padding: 15px;
+    width: 300px;
+    @include on-tablet {
+      width: 260px;
+     }
     @include on-desktop {
-      flex: 0 0 auto;
+      
       width: 283px;
-      border-radius: 34px;
-      padding: 15px;
       margin-right: 20px;
     }
     @include on-extra-large {
@@ -105,7 +146,14 @@
   &__img {
     display: flex;
     position: absolute;
-
+    width: 200px;
+    height: 200px;
+    top: -113px;
+    @include on-tablet {
+      width: 176px;
+      height: 170px;
+      top: -92px;
+     }
     @include on-desktop {
       width: 230px;
       height: 230px;
@@ -123,6 +171,14 @@
     text-align: left;
     color: $mainTextColor;
     font-weight: 600;
+    font-size: 17px;
+      line-height: 29px;
+      height: 60px;
+    @include on-tablet {
+      font-size: 17px;
+      line-height: 29px;
+      height: 60px;
+     }
     @include on-desktop {
       font-size: 18px;
       line-height: 29px;
@@ -141,6 +197,14 @@
     text-align: left;
     color:#535353;
     font-weight: 600;
+    margin-top: 0;
+      font-size: 16px;
+      line-height: 25px;
+    @include on-tablet {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 25px;
+     }
     @include on-desktop {
       margin-top: 10px;
       font-size: 14px;
@@ -159,6 +223,11 @@
     letter-spacing: 0em;
     text-align: left;
     color: $mainTextColor;
+    @include on-tablet {
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 25px;
+     }
     @include on-desktop {
       font-size: 20px;
       line-height: 29px;
@@ -185,6 +254,16 @@
     color: #fff;
     position: relative;
     transition: all 3s ease-in-out;
+    @include on-tablet {
+      height: 45px;
+      margin-top: 33px;
+      font-size: 15px;
+     }
+     @include on-desktop {
+      height: 57px;
+      margin-top: 33px;
+      font-size: 20px;
+    }
     &:hover {
       background-color: #e1ec49;
     }
@@ -194,18 +273,19 @@
       position: absolute;
       background-image: url(../images/product/basket2.svg);
       background-repeat: no-repeat;
+      @include on-tablet {
+        background-size: 15px;
+        width: 15px;
+        height: 15px;
+        left: 61px;
+        top: 14px;
+       }
       @include on-desktop {
         width: 18px;
         height: 16px;
         left: 55px;
         top: 18px;
       }
-    }
-
-    @include on-desktop {
-      height: 57px;
-      margin-top: 33px;
-      font-size: 20px;
     }
   }
 }
