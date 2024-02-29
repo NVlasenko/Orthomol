@@ -15,6 +15,9 @@
     height: 850px;
   }
   @include on-large {
+    height: 850px;
+  }
+  @include on-extra-large {
     height: 100vh;
   }
 
@@ -31,6 +34,9 @@
     @include on-large {
       margin-top: 183px;
       margin-left: 0;
+    }
+    @include on-extra-large {
+     margin-top: 300px;
     }
   }
   &__title {
@@ -53,7 +59,11 @@
       margin-top: 14px;
     }
     @include on-large {
-      font-size: 65px;
+      font-size: 60px;
+      line-height: 70px;
+    }
+    @include on-extra-large {
+      font-size: 80px;
       line-height: 90px;
     }
   }
@@ -86,13 +96,17 @@
     }
     @include on-large {
       width: 375px;
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 400;
       line-height: 35px;
       letter-spacing: 0em;
       text-align: left;
-      margin-top: 37px;
+      margin-top: 30px;
     }
+    @include on-extra-large {
+      font-size: 24px;
+      margin-top: 35px;
+     }
   }
 
   &__button {
@@ -125,12 +139,18 @@
       margin-top: 38px;
     }
     @include on-large {
-      width: 300px;
+      width: 280px;
       height: 70px;
       font-size: 22px;
       line-height: 22px;
-      margin-top: 65px;
+      margin-top: 45px;
     }
+    @include on-extra-large {
+      width: 300px;
+      height: 75px;
+      font-size: 24px;
+      margin-top: 55px;
+     }
     &:hover {
       background-color: #275aac;
     }

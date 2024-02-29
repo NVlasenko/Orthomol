@@ -12,6 +12,10 @@
   }
 
   @include on-large {
-    padding: 0 250px;
+    padding: 0 150px;
+  }
+
+  @include on-extra-large {
+    padding: 0 450px;
   }
 }

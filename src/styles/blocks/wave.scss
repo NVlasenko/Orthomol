@@ -1,14 +1,17 @@
 .wave {
   position: relative;
   @include on-tablet {
-   top: 403px;
+   top: 177px;
   }
   @include on-desktop {
     top: 33px;
   }
   @include on-large {
-    top: 400px;
+    top: -11px;
   }
+  @include on-extra-large {
+    top: 290px;
+   }
   &__one {
     position: absolute;
     display: none;
