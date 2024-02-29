@@ -341,12 +341,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .wave {
-    top: 15px;
+    top: 0;
   }
 }
 @media (min-width: 1500px) {
   .wave {
-    top: 260px;
+    top: -33px;
   }
 }
 .wave__one {
@@ -714,18 +714,24 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   }
 }
 .header {
-  height: 100vh;
   background-image: url(../images/bg/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   background-position: top left;
   overflow: hidden;
+  height: 700px;
 }
 @media (min-width: 744px) {
   .header {
     background-position: right;
     background-image: url(../images/bg/bg.jpg);
+    height: 800px;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    height: 850px;
   }
 }
 .header__info {
@@ -740,12 +746,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .header__info {
-    margin-top: 136px;
+    margin-top: 200px;
   }
 }
 @media (min-width: 1500px) {
   .header__info {
-    margin-top: 255px;
+    margin-top: 123px;
     margin-left: 20px;
   }
 }
@@ -767,16 +773,16 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .header__title {
-    font-size: 62px;
+    font-size: 70px;
     font-weight: 600;
-    line-height: 73px;
+    line-height: 76px;
     margin-top: 14px;
   }
 }
 @media (min-width: 1500px) {
   .header__title {
-    font-size: 70px;
-    line-height: 100px;
+    font-size: 65px;
+    line-height: 90px;
   }
 }
 .header__subtitle {
@@ -815,10 +821,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     width: 375px;
     font-size: 23px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 35px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 45px;
+    margin-top: 37px;
   }
 }
 .header__button {
@@ -864,7 +870,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     height: 70px;
     font-size: 22px;
     line-height: 22px;
-    margin-top: 90px;
+    margin-top: 65px;
   }
 }
 .header__button:hover {

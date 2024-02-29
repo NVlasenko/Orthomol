@@ -4,10 +4,10 @@
    top: 403px;
   }
   @include on-desktop {
-    top: 15px;
+    top: 0;
   }
   @include on-large {
-    top: 260px;
+    top: -33px;
   }
   &__one {
     position: absolute;
