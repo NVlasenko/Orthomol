@@ -1,11 +1,9 @@
 .footer {
- 
   background-color: #000;
-
   &__container {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 330px;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -36,8 +34,8 @@
 
   &__list {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     @include on-tablet {
@@ -60,6 +58,11 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 30px;
+    justify-content: center;
+    margin-top: 10px;
+    @include on-tablet {
+      margin-top: 30px;
+    }
     &--text {
       color: #fff;
       font-family: Inter;
