@@ -148,7 +148,7 @@ openMenu.addEventListener('click', function () {
 closeMenu.addEventListener('click', function () {
   menuActive.style.transform = 'translateX(-100%)';
   enableScroll();
-  menu.style.display = 'blocл';
+  menu.style.display = 'block';
 });
 function disableScroll() {
   var scrollY = window.scrollY;
