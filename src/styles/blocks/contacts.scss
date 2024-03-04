@@ -1,0 +1,75 @@
+.contacts {
+  background-image: url(../images/bg/bgContacts.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include on-tablet {
+    height: 600px;
+  }
+  
+  &__container {
+    padding-top: 30px;
+    
+    @include on-tablet {
+      padding-top: 40px;
+    }
+    
+    @include on-desktop {
+      padding-top: 90px;
+    }
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: center;
+    color: #f3f5dA;
+    
+    @include on-tablet {
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 96px;
+    }
+    
+    @include on-desktop {
+      font-size: 70px;
+      font-weight: 600;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
+    @include on-tablet {
+      flex-direction: row;
+      gap: 40px;
+    }
+    
+    @include on-desktop {
+      gap: 50px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #b7c029;
+    display: flex;
+    justify-content: center;
+    @include on-tablet {
+      font-size: 25px;
+      line-height: 60px;
+    }
+    
+    @include on-desktop {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 96px;
+    }
+  }
+}

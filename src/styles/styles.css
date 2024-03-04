@@ -11,6 +11,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 
 .page {
   font-family: Oddval, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -2130,4 +2131,102 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 hr {
   width: 100%;
   color: #000;
+}
+
+.contacts {
+  background-image: url(../images/bg/bgContacts.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 744px) {
+  .contacts {
+    height: 600px;
+  }
+}
+.contacts__container {
+  padding-top: 30px;
+}
+@media (min-width: 744px) {
+  .contacts__container {
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts__container {
+    padding-top: 90px;
+  }
+}
+.contacts__title {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: center;
+  color: #f3f5dA;
+}
+@media (min-width: 744px) {
+  .contacts__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 96px;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts__title {
+    font-size: 70px;
+    font-weight: 600;
+  }
+}
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 744px) {
+  .contacts__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts__list {
+    gap: 50px;
+  }
+}
+.contacts__link {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #b7c029;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 744px) {
+  .contacts__link {
+    font-size: 25px;
+    line-height: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts__link {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 96px;
+  }
 }
