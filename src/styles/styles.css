@@ -2381,25 +2381,90 @@ hr {
 
 .shipping {
   background-color: #f3f5da;
-  height: 100vh;
-  padding: 100px;
+  height: 1200px;
+  padding: 15px;
+}
+@media (min-width: 744px) {
+  .shipping {
+    padding: 60px;
+    height: 900px;
+  }
+}
+@media (min-width: 1280px) {
+  .shipping {
+    height: 1300px;
+  }
 }
 .shipping__title {
   color: #b7c029;
-  font-size: 60px;
+  font-size: 28px;
   font-weight: 600;
+  margin-top: 30px;
+}
+@media (min-width: 744px) {
+  .shipping__title {
+    font-size: 50px;
+    margin-top: 70px;
+  }
+}
+@media (min-width: 1280px) {
+  .shipping__title {
+    font-size: 70px;
+    margin-top: 70px;
+  }
 }
 .shipping__subtitle {
   color: #b7c029;
-  font-size: 40px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+@media (min-width: 1280px) {
+  .shipping__subtitle {
+    font-size: 40px;
+    margin-top: 50px;
+  }
 }
 .shipping__text {
-  font-size: 25px;
+  font-size: 17px;
+  margin-top: 15px;
+  line-height: 20px;
+}
+@media (min-width: 1280px) {
+  .shipping__text {
+    font-size: 25px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
 }
 .shipping__container {
   border: 1px solid #000;
   border-radius: 30px;
   padding: 20px;
+  margin-top: 50px;
+}
+@media (min-width: 744px) {
+  .shipping__container {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1280px) {
+  .shipping__container {
+    margin-top: 100px;
+  }
+}
+.shipping__important {
+  font-size: 18px;
+  color: #b7c029;
+}
+@media (min-width: 744px) {
+  .shipping__important {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .shipping__important {
+    font-size: 40px;
+  }
 }
 
 span {
@@ -2408,22 +2473,42 @@ span {
 
 .back {
   text-decoration: none;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: 600;
   color: #000;
-  margin-left: 60px;
+  margin-left: 40px;
   position: relative;
+}
+@media (min-width: 744px) {
+  .back {
+    font-size: 40px;
+    margin-left: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .back {
+    font-size: 50px;
+  }
 }
 .back::before {
   content: "";
   position: absolute;
-  left: -50px;
+  left: -27px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid #000;
+  width: 10px;
+  height: 10px;
+  background-size: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #000;
+}
+@media (min-width: 744px) {
+  .back::before {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #000;
+    left: -50px;
+  }
 }

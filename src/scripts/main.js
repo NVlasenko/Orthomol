@@ -64,7 +64,7 @@ window.addEventListener('load', function() {
   
   setTimeout(function() {
     welcomeImage.style.transform = 'translateY(-100%)';
-  }, 2000); 
+  }, 2000);
 });
 
 // === welcome image end === 
