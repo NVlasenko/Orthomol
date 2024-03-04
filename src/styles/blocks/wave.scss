@@ -1,7 +1,7 @@
 .wave {
   position: relative;
   @include on-tablet {
-   top: 185px;
+    top: 185px;
   }
   @include on-desktop {
     top: 33px;
@@ -11,7 +11,7 @@
   }
   @include on-extra-large {
     top: 290px;
-   }
+  }
   &__one {
     position: absolute;
     display: none;
@@ -168,14 +168,12 @@
   }
 }
 
-
-
 @keyframes waveAnimation {
   0% {
     opacity: 1;
   }
   50% {
-    opacity: 0; 
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -187,7 +185,7 @@
     opacity: 1;
   }
   50% {
-    opacity: 0; 
+    opacity: 0;
   }
   100% {
     opacity: 1;

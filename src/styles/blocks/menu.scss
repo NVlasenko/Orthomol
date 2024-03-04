@@ -1,17 +1,16 @@
 .menu {
   background-color: rgba(223, 227, 191, 0.8);
-  border: 2px solid #f8fAe2;
+  border: 2px solid #f8fae2;
   position: absolute;
   border-radius: 90px;
   margin: auto;
   z-index: 10;
   top: 10px;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   box-sizing: border-box;
   @include on-tablet {
-
-   }
+  }
   @include on-desktop {
     position: fixed;
     top: 15px;
@@ -60,8 +59,6 @@
     }
   }
 
-  
-
   &__info {
     display: none;
     @include on-desktop {
@@ -69,7 +66,6 @@
       flex-direction: row;
       display: flex;
     }
-    
   }
 
   &__link {
@@ -95,7 +91,7 @@
     }
   }
 
-  &__contacts { 
+  &__contacts {
     @include on-desktop {
       display: flex;
       align-items: center;
@@ -136,14 +132,14 @@
       line-height: 14px;
       height: 43px;
     }
-  
+
     &::before {
       @include on-desktop {
         width: 19px;
         height: 19px;
         left: 28px;
         top: 11px;
-        content: '';
+        content: "";
         position: absolute;
         background-image: url(../images/icons/phone.svg);
         background-repeat: no-repeat;

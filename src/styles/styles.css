@@ -247,7 +247,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 
 .menuOpen {
   background-color: #dfe3bf;
-  border: 2px solid #f8fAe2;
+  border: 2px solid #f8fae2;
   border-radius: 90px;
   margin: auto;
   position: relative;
@@ -1013,7 +1013,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 
 .menu {
   background-color: rgba(223, 227, 191, 0.8);
-  border: 2px solid #f8fAe2;
+  border: 2px solid #f8fae2;
   position: absolute;
   border-radius: 90px;
   margin: auto;
@@ -1279,7 +1279,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   background-position: center;
   background-size: cover;
   padding-top: 70px;
-  height: 100vh;
+  height: 1300px;
 }
 @media (min-width: 744px) {
   .catalog {
@@ -1601,8 +1601,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   display: flex;
   font-size: 30px;
   margin-top: 40px;
-  background-color: #b7C029;
-  border: #b7C029;
+  background-color: #b7c029;
+  border: #b7c029;
   border-radius: 34px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

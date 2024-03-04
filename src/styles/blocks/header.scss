@@ -33,7 +33,7 @@
       margin-left: 0;
     }
     @include on-extra-large {
-     margin-top: 300px;
+      margin-top: 300px;
     }
   }
   &__title {
@@ -103,7 +103,7 @@
     @include on-extra-large {
       font-size: 24px;
       margin-top: 35px;
-     }
+    }
   }
 
   &__button {
@@ -147,7 +147,7 @@
       height: 75px;
       font-size: 24px;
       margin-top: 55px;
-     }
+    }
     &:hover {
       background-color: #275aac;
     }
@@ -174,59 +174,59 @@
       bottom: 60px;
       right: 10%;
     }
-    
-      &--item {
-        position: relative;
-        list-style-type: none;
+
+    &--item {
+      position: relative;
+      list-style-type: none;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #353e04;
+      margin-top: 18px;
+      @include on-tablet {
         font-size: 18px;
-        line-height: 20px;
-        font-weight: 600;
-        color: #353e04;
+        line-height: 13px;
+        color: #d5dbb4;
+      }
+      @include on-desktop {
+        font-size: 24px;
+        line-height: 29px;
         margin-top: 18px;
+      }
+      @include on-large {
+        font-size: 30px;
+        line-height: 35px;
+        margin-top: 20px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/icons/mark.svg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        width: 25px;
+        height: 25px;
+        left: -30px;
+        bottom: -2px;
         @include on-tablet {
-          font-size: 18px;
-          line-height: 13px;
-          color: #d5dbb4;
+          background-size: 28px;
+          width: 28px;
+          height: 28px;
+          left: -40px;
+          bottom: -6px;
         }
         @include on-desktop {
-          font-size: 24px;
-          line-height: 29px;
-          margin-top: 18px;
+          background-size: 40px;
+          width: 40px;
+          height: 40px;
+          left: -50px;
+          bottom: -6px;
         }
         @include on-large {
-          font-size: 30px;
-          line-height: 35px;
-          margin-top: 20px;
+          bottom: -3px;
+          left: -55px;
         }
-        &::before {
-          content: '';
-          position: absolute;
-          background-image: url(../images/icons/mark.svg);
-          background-repeat: no-repeat;
-          background-size: 25px;
-          width: 25px;
-          height: 25px;
-          left: -30px;
-          bottom: -2px;
-          @include on-tablet {
-            background-size: 28px;
-            width: 28px;
-            height: 28px;
-            left: -40px;
-            bottom: -6px;
-          }
-          @include on-desktop {
-            background-size: 40px;
-            width: 40px;
-            height: 40px;
-            left: -50px;
-            bottom: -6px;
-          }
-          @include on-large {
-            bottom: -3px;
-            left: -55px;
-          }
-        }
+      }
     }
   }
 }

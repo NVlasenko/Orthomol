@@ -3,13 +3,13 @@
   background-position: center;
   background-size: cover;
   padding-top: 70px;
-  height: 100vh;
+  height: 1300px;
   @include on-tablet {
     padding-top: 90px;
     height: 800px;
-   }
-   @include on-desktop {
-   height: 900px;
+  }
+  @include on-desktop {
+    height: 900px;
   }
   @include on-extra-large {
     padding-top: 270px;
@@ -23,7 +23,7 @@
       font-size: 40px;
       font-weight: 600;
       line-height: 48px;
-     }
+    }
     @include on-desktop {
       font-size: 40px;
       font-weight: 600;
@@ -39,7 +39,6 @@
     justify-content: space-between;
     align-items: center;
     @include on-desktop {
-    
     }
   }
 
@@ -48,9 +47,8 @@
     gap: 10px;
     @include on-tablet {
       gap: 15px;
-     }
+    }
     @include on-desktop {
-     
     }
 
     &--left {
@@ -61,7 +59,7 @@
       @include on-tablet {
         width: 50px;
         height: 50px;
-       }
+      }
       @include on-extra-large {
         width: 70px;
         height: 70px;
@@ -75,7 +73,7 @@
       @include on-tablet {
         width: 50px;
         height: 50px;
-       }
+      }
       @include on-extra-large {
         width: 70px;
         height: 70px;
@@ -98,7 +96,7 @@
     @include on-tablet {
       padding-top: 150px;
       gap: 30px;
-     }
+    }
     @include on-desktop {
       padding-top: 170px;
       gap: 0;
@@ -112,7 +110,7 @@
     margin-top: 140px;
     @include on-tablet {
       margin-top: 70px;
-     }
+    }
     @include on-desktop {
       margin-top: 100px;
     }
@@ -124,7 +122,7 @@
     background-color: #fff;
     text-align: center;
     align-items: center;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     position: relative;
     flex: 0 0 auto;
     border-radius: 34px;
@@ -132,7 +130,7 @@
     width: 100%;
     @include on-tablet {
       width: 260px;
-     }
+    }
     @include on-desktop {
       width: 283px;
       margin-right: 20px;
@@ -152,7 +150,7 @@
       width: 211px;
       height: 230px;
       top: -130px;
-     }
+    }
     @include on-desktop {
       width: 250px;
       height: 300px;
@@ -176,7 +174,7 @@
     @include on-tablet {
       font-size: 17px;
       line-height: 25px;
-     }
+    }
     @include on-desktop {
       font-size: 18px;
       line-height: 25px;
@@ -191,7 +189,7 @@
   &__subtitle {
     letter-spacing: 0em;
     text-align: left;
-    color:#535353;
+    color: #535353;
     font-weight: 600;
     margin-top: 90px;
     font-size: 23px;
@@ -202,7 +200,7 @@
       font-size: 14px;
       line-height: 25px;
       height: 130px;
-     }
+    }
     @include on-desktop {
       margin-top: 45px;
       font-size: 14px;
@@ -229,7 +227,7 @@
       margin-top: 60px;
       font-size: 18px;
       line-height: 25px;
-     }
+    }
     @include on-desktop {
       font-size: 20px;
       line-height: 29px;
@@ -247,8 +245,8 @@
     display: flex;
     font-size: 30px;
     margin-top: 40px;
-    background-color: #b7C029;
-    border: #b7C029;
+    background-color: #b7c029;
+    border: #b7c029;
     border-radius: 34px;
     justify-content: center;
     align-items: center;
@@ -263,8 +261,8 @@
       height: 45px;
       margin-top: 33px;
       font-size: 15px;
-     }
-     @include on-desktop {
+    }
+    @include on-desktop {
       height: 57px;
       margin-top: 33px;
       font-size: 20px;
@@ -274,7 +272,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-image: url(../images/product/basket2.svg);
       background-repeat: no-repeat;
@@ -290,7 +288,7 @@
         height: 15px;
         left: 61px;
         top: 14px;
-       }
+      }
       @include on-desktop {
         width: 18px;
         height: 16px;
