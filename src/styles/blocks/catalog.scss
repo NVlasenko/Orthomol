@@ -18,7 +18,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: $mainTextColor;
-    font-size: 20px;
+    font-size: 22px;
     @include on-tablet {
       font-size: 40px;
       font-weight: 600;
@@ -93,7 +93,7 @@
     overflow-x: hidden;
     overflow-y: visible;
     position: relative;
-    padding-top: 120px;
+    padding-top: 140px;
     gap: 20px;
     @include on-tablet {
       padding-top: 100px;
@@ -129,12 +129,11 @@
     flex: 0 0 auto;
     border-radius: 34px;
     padding: 15px;
-    width: 300px;
+    width: 100%;
     @include on-tablet {
       width: 260px;
      }
     @include on-desktop {
-      
       width: 283px;
       margin-right: 20px;
     }
@@ -146,9 +145,9 @@
   &__img {
     display: flex;
     position: absolute;
-    width: 200px;
-    height: 200px;
-    top: -113px;
+    width: 220px;
+    height: 220px;
+    top: -120px;
     @include on-tablet {
       width: 176px;
       height: 170px;
@@ -241,7 +240,10 @@
 
   &__basket {
     width: 100%;
+    height: 40px;
     display: flex;
+    font-size: 19px;
+    margin-top: 30px;
     background-color: #b7C029;
     border: #b7C029;
     border-radius: 34px;
@@ -273,6 +275,11 @@
       position: absolute;
       background-image: url(../images/product/basket2.svg);
       background-repeat: no-repeat;
+      background-size: 17px;
+        width: 17px;
+        height: 17px;
+        left: 61px;
+        top: 11px;
       @include on-tablet {
         background-size: 15px;
         width: 15px;
