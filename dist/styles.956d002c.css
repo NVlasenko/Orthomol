@@ -1286,7 +1286,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 @media (min-width: 744px) {
   .catalog {
     padding-top: 90px;
-    height: 1000px;
+    height: 1100px;
   }
 }
 @media (min-width: 1280px) {
@@ -1900,7 +1900,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 
 .advantages {
   background-color: #b7c029;
-  height: 100vh;
+  padding-bottom: 100px;
+}
+@media (min-width: 744px) {
+  .advantages {
+    padding-bottom: 150px;
+  }
 }
 .advantages__wave {
   position: absolute;
@@ -1912,39 +1917,71 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 744px) {
   .advantages__wave {
-    height: 150px;
+    height: 200px;
+    bottom: -20px;
   }
 }
 @media (min-width: 1280px) {
   .advantages__wave {
     height: 300px;
+    bottom: -20px;
   }
 }
 @media (min-width: 1980px) {
   .advantages__wave {
     height: 500px;
+    bottom: 0;
   }
 }
 .advantages__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 100px;
+  padding-top: 100px;
+}
+@media (min-width: 744px) {
+  .advantages__container {
+    padding-top: 75px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media (min-width: 1500px) {
+  .advantages__container {
+    padding-top: 100px;
+  }
 }
 
 .advantage__title {
   font-weight: 600;
   text-align: left;
   color: #fff;
+  font-size: 35px;
+  line-height: 40px;
+}
+@media (min-width: 744px) {
+  .advantage__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 @media (min-width: 1280px) {
   .advantage__title {
     font-size: 70px;
     line-height: 80px;
+  }
+}
+@media (min-width: 1500px) {
+  .advantage__title {
+    font-size: 80px;
+    line-height: 90px;
   }
 }
 .advantage__subtitle {
@@ -1961,12 +1998,26 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   text-align: left;
   color: #fff;
   margin-top: 30px;
+  font-size: 18px;
+  line-height: 25px;
+}
+@media (min-width: 744px) {
+  .advantage__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 @media (min-width: 1280px) {
   .advantage__subtitle {
     font-size: 18px;
-    font-weight: 500;
     line-height: 25px;
+  }
+}
+@media (min-width: 1500px) {
+  .advantage__subtitle {
+    font-size: 22px;
+    line-height: 27px;
+    gap: 50px;
   }
 }
 .advantage__add {
@@ -1979,8 +2030,24 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
           flex-direction: column;
   border-radius: 30px;
   background-color: #f3f5dA;
-  padding: 50px;
+  padding: 30px;
   gap: 20px;
+}
+@media (min-width: 744px) {
+  .advantage__add {
+    padding: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .advantage__add {
+    padding: 50px;
+  }
+}
+@media (min-width: 1500px) {
+  .advantage__add {
+    gap: 30px;
+    padding: 40px;
+  }
 }
 .advantage__info {
   display: -webkit-box;
@@ -1993,10 +2060,16 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   gap: 10px;
 }
 .advantage__info--title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 31px;
+  line-height: 25px;
   color: #333030;
+}
+@media (min-width: 744px) {
+  .advantage__info--title {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 @media (min-width: 1280px) {
   .advantage__info--title {
@@ -2004,17 +2077,35 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     line-height: 31px;
   }
 }
+@media (min-width: 1500px) {
+  .advantage__info--title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
 .advantage__info--subtitle {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
   color: #575252;
+}
+@media (min-width: 744px) {
+  .advantage__info--subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 @media (min-width: 1280px) {
   .advantage__info--subtitle {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+@media (min-width: 1500px) {
+  .advantage__info--subtitle {
+    font-size: 20px;
+    line-height: 40px;
   }
 }
 
