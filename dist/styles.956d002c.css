@@ -356,7 +356,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1980px) {
   .wave {
-    top: 290px;
+    top: 320px;
   }
 }
 .wave__one {
@@ -724,7 +724,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   }
 }
 .header {
-  background-image: url(/bg.a05c757d.jpg);
+  background-image: url(/bgPhone.f593693e.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -733,6 +733,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 744px) {
   .header {
+    background-image: url(/bg.a05c757d.jpg);
     height: 800px;
   }
 }
@@ -1295,6 +1296,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 @media (min-width: 1980px) {
   .catalog {
     padding-top: 270px;
+    height: 1400px;
   }
 }
 .catalog__title {
@@ -1494,13 +1496,19 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
     width: 250px;
     height: 300px;
     top: -170px;
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+  }
+  .product__img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 @media (min-width: 1980px) {
   .product__img {
-    width: 240px;
-    height: 250px;
-    top: -140px;
+    width: 300px;
+    height: 300px;
+    top: -169px;
   }
 }
 .product__title {
@@ -1558,7 +1566,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1980px) {
   .product__subtitle {
-    margin-top: 20px;
+    margin-top: 60px;
     font-size: 15px;
     font-weight: 600;
     line-height: 27px;
@@ -1591,6 +1599,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   .product__price {
     font-size: 23px;
     line-height: 29px;
+    margin-top: 70px;
   }
 }
 .product__basket {
@@ -1618,6 +1627,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   position: relative;
   -webkit-transition: all 3s ease-in-out;
   transition: all 3s ease-in-out;
+  cursor: pointer;
 }
 @media (min-width: 744px) {
   .product__basket {
@@ -1659,10 +1669,20 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
 }
 @media (min-width: 1280px) {
   .product__basket::before {
-    width: 18px;
-    height: 16px;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
     left: 55px;
-    top: 18px;
+    top: 17px;
+  }
+}
+@media (min-width: 1980px) {
+  .product__basket::before {
+    background-size: 21px;
+    width: 21px;
+    height: 21px;
+    left: 67px;
+    top: 16px;
   }
 }
 
