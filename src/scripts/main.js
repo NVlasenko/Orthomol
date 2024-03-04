@@ -30,7 +30,7 @@ openMenu.addEventListener('click', function() {
 closeMenu.addEventListener('click', function() {
   menuActive.style.transform = 'translateX(-100%)';
   enableScroll();
-  menu.style.display = 'block';
+  menu.style.display = 'blocл';
 });
 
 function disableScroll() {
@@ -121,7 +121,6 @@ productsContainer.addEventListener('wheel', preventScroll, { passive: false });
 productsContainer.addEventListener('touchmove', preventScroll, { passive: false });
 
 // === carousel end ===
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const addToCartButtons = document.querySelectorAll('.product__basket');

@@ -3,13 +3,13 @@
   background-position: center;
   background-size: cover;
   padding-top: 70px;
-  height: 600px;
+  height: 1000px;
   @include on-tablet {
-    padding-top: 70px;
-    height: 700px;
+    padding-top: 90px;
+    height: 800px;
    }
    @include on-desktop {
-   height: 800px;
+   height: 900px;
   }
   @include on-extra-large {
     padding-top: 270px;
@@ -93,14 +93,14 @@
     overflow-x: hidden;
     overflow-y: visible;
     position: relative;
-    padding-top: 140px;
-    gap: 20px;
+    padding-top: 200px;
+    justify-content: space-between;
     @include on-tablet {
-      padding-top: 100px;
+      padding-top: 150px;
       gap: 30px;
      }
     @include on-desktop {
-      padding-top: 160px;
+      padding-top: 170px;
       gap: 0;
     }
     @include on-extra-large {
@@ -109,9 +109,9 @@
   }
 
   &__info {
-    margin-top: 70px;
+    margin-top: 160px;
     @include on-tablet {
-      margin-top: 50px;
+      margin-top: 70px;
      }
     @include on-desktop {
       margin-top: 100px;
@@ -145,18 +145,18 @@
   &__img {
     display: flex;
     position: absolute;
-    width: 220px;
-    height: 220px;
-    top: -120px;
+    width: 430px;
+    height: 400px;
+    top: -239px;
     @include on-tablet {
-      width: 176px;
-      height: 170px;
-      top: -92px;
+      width: 211px;
+      height: 230px;
+      top: -130px;
      }
     @include on-desktop {
-      width: 230px;
-      height: 230px;
-      top: -110px;
+      width: 250px;
+      height: 300px;
+      top: -170px;
     }
     @include on-extra-large {
       width: 240px;
@@ -170,17 +170,17 @@
     text-align: left;
     color: $mainTextColor;
     font-weight: 600;
-    font-size: 17px;
-      line-height: 29px;
-      height: 60px;
+    font-size: 27px;
+    line-height: 34px;
+    height: 60px;
     @include on-tablet {
       font-size: 17px;
-      line-height: 29px;
+      line-height: 25px;
       height: 60px;
      }
     @include on-desktop {
       font-size: 18px;
-      line-height: 29px;
+      line-height: 25px;
       height: 60px;
     }
 
@@ -196,18 +196,21 @@
     text-align: left;
     color:#535353;
     font-weight: 600;
-    margin-top: 0;
-      font-size: 16px;
-      line-height: 25px;
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    height: 170px;
     @include on-tablet {
-      margin-top: 10px;
+      margin-top: 45px;
       font-size: 14px;
       line-height: 25px;
+      height: 130px;
      }
     @include on-desktop {
-      margin-top: 10px;
+      margin-top: 45px;
       font-size: 14px;
-      line-height: 25px;
+      line-height: 23px;
+      height: 120px;
     }
     @include on-extra-large {
       margin-top: 20px;
@@ -222,8 +225,11 @@
     letter-spacing: 0em;
     text-align: left;
     color: $mainTextColor;
+    margin-top: 70px;
+    font-size: 32px;
+    line-height: 25px;
     @include on-tablet {
-      margin-top: 10px;
+      margin-top: 60px;
       font-size: 18px;
       line-height: 25px;
      }

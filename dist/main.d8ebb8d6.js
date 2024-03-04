@@ -148,7 +148,7 @@ openMenu.addEventListener('click', function () {
 closeMenu.addEventListener('click', function () {
   menuActive.style.transform = 'translateX(-100%)';
   enableScroll();
-  menu.style.display = 'block';
+  menu.style.display = 'blocл';
 });
 function disableScroll() {
   var scrollY = window.scrollY;
@@ -370,7 +370,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57334" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61372" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
