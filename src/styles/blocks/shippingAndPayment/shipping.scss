@@ -1,0 +1,30 @@
+.shipping {
+  background-color: #f3f5da;
+  height: 100vh;
+  padding: 100px;
+
+  &__title {
+    color: #b7c029;
+    font-size: 60px;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    color: #b7c029;
+    font-size: 40px;
+  }
+
+  &__text {
+    font-size: 25px;
+  }
+
+  &__container {
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 20px;
+  }
+}
+
+span {
+  color: red;
+}

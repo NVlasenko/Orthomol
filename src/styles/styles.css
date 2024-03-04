@@ -2378,3 +2378,52 @@ hr {
     height: 40px;
   }
 }
+
+.shipping {
+  background-color: #f3f5da;
+  height: 100vh;
+  padding: 100px;
+}
+.shipping__title {
+  color: #b7c029;
+  font-size: 60px;
+  font-weight: 600;
+}
+.shipping__subtitle {
+  color: #b7c029;
+  font-size: 40px;
+}
+.shipping__text {
+  font-size: 25px;
+}
+.shipping__container {
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+span {
+  color: red;
+}
+
+.back {
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 600;
+  color: #000;
+  margin-left: 60px;
+  position: relative;
+}
+.back::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #000;
+}
