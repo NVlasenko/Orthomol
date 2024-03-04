@@ -10,7 +10,7 @@
     background-size: cover;
     height: 100px;
     width: 100%;
-    bottom: 0;
+    bottom: -20px;
     @include on-tablet {
       height: 200px;
       bottom: -20px;
@@ -116,6 +116,22 @@
       font-weight: 600;
       line-height: 25px;
       color: #333030;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/check.svg);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        @include on-desktop {
+          background-size: 30px;
+          width: 30px;
+          height: 30px;
+        }
+      }
       @include on-tablet {
         font-size: 20px;
         line-height: 25px;
