@@ -4,16 +4,17 @@
   background-size: cover;
   padding-top: 70px;
   height: 1300px;
+  position: relative;
   @include on-tablet {
     padding-top: 90px;
-    height: 800px;
+    height: 1000px;
   }
   @include on-desktop {
-    height: 900px;
+    height: 1300px;
   }
   @include on-extra-large {
     padding-top: 270px;
-    height: 1400px;
+    height: 1800px;
   }
   &__title {
     letter-spacing: 0em;
