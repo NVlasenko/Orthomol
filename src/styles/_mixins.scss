@@ -35,3 +35,53 @@
     --columns: 12;
   }
 }
+
+@mixin footerListStyle {
+  background-color: #f3f5da;
+  height: 100%;
+  padding: 15px;
+  
+  @include on-tablet {
+    padding: 60px;
+  }
+
+  &__title {
+    color: #b7c029;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 30px;
+    
+    @include on-tablet {
+      font-size: 40px;
+      margin-top: 70px;
+     }
+     
+     @include on-desktop {
+      font-size: 50px;
+      margin-top: 70px;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 20px;
+    
+    @include on-desktop {
+      font-size: 20px;
+      margin-top: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__subtitle {
+    color: #b7c029;
+    font-size: 25px;
+    margin-top: 20px;
+    
+    @include on-desktop {
+      font-size: 35px;
+      margin-top: 50px;
+    }
+  }
+}

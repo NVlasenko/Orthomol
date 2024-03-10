@@ -1,49 +1,7 @@
 .shipping {
-  background-color: #f3f5da;
-  height: 1200px;
-  padding: 15px;
-  @include on-tablet {
-    padding: 60px;
-    height: 900px;
-  }
-  @include on-desktop {
-    height: 1300px;
-  }
-
-  &__title {
-    color: #b7c029;
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 30px;
-    @include on-tablet {
-      font-size: 50px;
-      margin-top: 70px;
-     }
-     @include on-desktop {
-      font-size: 70px;
-      margin-top: 70px;
-    }
-  }
-
-  &__subtitle {
-    color: #b7c029;
-    font-size: 25px;
-    margin-top: 20px;
-    @include on-desktop {
-      font-size: 40px;
-      margin-top: 50px;
-    }
-  }
+  @include footerListStyle;
 
   &__text {
-    font-size: 17px;
-    margin-top: 15px;
-    line-height: 20px;
-    @include on-desktop {
-      font-size: 25px;
-      margin-top: 20px;
-      line-height: 40px;
-    }
     span {
       color: red;
     }
