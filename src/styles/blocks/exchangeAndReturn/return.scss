@@ -3,8 +3,8 @@
   height: 850px;
   @include on-tablet {
     height: 800px;
-   }
-   @include on-desktop {
+  }
+  @include on-desktop {
     height: 100vh;
   }
 }

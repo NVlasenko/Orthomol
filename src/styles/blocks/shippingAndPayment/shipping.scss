@@ -14,7 +14,7 @@
     margin-top: 50px;
     @include on-tablet {
       margin-top: 80px;
-     }
+    }
     @include on-desktop {
       margin-top: 100px;
     }
@@ -25,7 +25,7 @@
     color: #b7c029;
     @include on-tablet {
       font-size: 30px;
-     }
+    }
     @include on-desktop {
       font-size: 40px;
     }
