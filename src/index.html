@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html lang="uk" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -253,9 +253,9 @@
           <li class="menuOpen__link">Вітаміни</li>
           <li class="menuOpen__link">Про нас</li>
           <li class="menuOpen__link">Контакти</li>
-          <a href="tel:+380634566575" class="menuOpen__link"
-            >+38 (063) 456 65 75</a
-          >
+          <a href="tel:+380634566575" class="menuOpen__link">
+            +38 (063) 456 65 75
+          </a>
           <div class="menuOpen__contacts">
             <a
               href="viber://chat?number=+380969196366"
@@ -964,24 +964,50 @@
       <div class="container">
         <div class="footer__container">
           <a href="#home" class="footer__logo">
-            <img src="../src/images/logo/logo.svg" alt="logo">
+            <img src="../src/images/logo/logo.svg" alt="logo" />
             Orthomol
           </a>
           <ul class="footer__list">
             <li>
-              <a href="../src/styles/blocks/shippingAndPayment/shipping.html" class="footer__link">Доставка та оплата</a>
+              <a
+                href="../src/styles/blocks/shippingAndPayment/shipping.html"
+                class="footer__link"
+              >
+                Доставка та оплата
+              </a
+              >
             </li>
             <li>
-              <a href="../src/styles/blocks/privacyPolitic/privacyPolitic.html" class="footer__link">Політика конфіденційності</a>
+              <a
+                href="../src/styles/blocks/privacyPolitic/privacyPolitic.html"
+                class="footer__link"
+              >
+                Політика конфіденційності
+              </a>
             </li>
             <li>
-              <a href="../src/styles/blocks/offerContract/offer.html" class="footer__link">Договір оферти</a>
+              <a
+                href="../src/styles/blocks/offerContract/offer.html"
+                class="footer__link"
+              >
+                Договір оферти
+              </a>
             </li>
             <li>
-              <a href="../src/styles/blocks/exchangeAndReturn/return.html" class="footer__link">Обмін та повернення</a>
+              <a
+                href="../src/styles/blocks/exchangeAndReturn/return.html"
+                class="footer__link"
+              >
+                Обмін та повернення
+              </a>
             </li>
             <li>
-              <a href="../src/styles/blocks/licenseAgreement/license.html" class="footer__link">Ліцензійний договір</a>
+              <a
+                href="../src/styles/blocks/licenseAgreement/license.html"
+                class="footer__link"
+              >
+                Ліцензійний договір
+              </a>
             </li>
             <li>
               <a href="#contacts" class="footer__link">Контакти</a>
@@ -992,17 +1018,25 @@
             <p class="footer__additionally--text">місто Київ,</p>
             <p class="footer__additionally--text">вул.Кирилівська,152</p>
             <div class="footer__additionally--image">
-              <img class="footer__additionally--img" src="../src/images/icons/mastercard.svg" alt="mastercard">
-              <img class="footer__additionally--img" src="../src/images/icons/visa.svg" alt="visa">
+              <img
+                class="footer__additionally--img"
+                src="../src/images/icons/mastercard.svg"
+                alt="mastercard"
+              />
+              <img
+                class="footer__additionally--img"
+                src="../src/images/icons/visa.svg"
+                alt="visa"
+              />
             </div>
-            
+
             <p class="footer__additionally--text">All rights reserve</p>
           </div>
         </div>
       </div>
     </footer>
 
-    <div class="cart" id="cart">
+    <section class="cart" id="cart">
       <div class="cart__container">
         <div class="cart__header">
           <h3 class="cart__title">Ваш кошик</h3>
@@ -1024,6 +1058,159 @@
           <button class="cart__checkout">Замовити</button>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="order">
+      <div class="container">
+        <div class="order__placing">
+          <p class="order__title">Оформлення замовлення</p>
+          <img
+          src="../src/images/icons//close.svg"
+          alt="closeOrder"
+          class="order__close"
+          style="color: #000"
+          id="closeOrder"
+        />
+        </div>
+        <hr />
+        <div class="order__container">
+          <div class="order__formContainer">
+            <form action="#" class="formData">
+              <p class="formData__title">Ваші данні</p>
+              <div class="formData__container">
+                <div class="formData__block">
+                  <input
+                    class="formData__list"
+                    type="text"
+                    placeholder="Ваше ім’я"
+                    name="name"
+                  />
+                  <input
+                    class="formData__list"
+                    type="text"
+                    placeholder="Ваше прізвище"
+                    name="surname"
+                  />
+                </div>
+
+                <div class="formData__block">
+                  <input
+                    class="formData__list"
+                    type="text"
+                    placeholder="Ваш телефон"
+                    name="number"
+                  />
+                  <input
+                    class="formData__list"
+                    type="text"
+                    placeholder="Ваш email"
+                    name="email"
+                  />
+                </div>
+              </div>
+            </form>
+            <hr />
+            <div class="address">
+              <p class="formData__title">Вкажіть адресу доставки:</p>
+
+              <form action="#" class="address__form">
+                <div class="delivery">
+                  <p class="delivery__title">Спосіб досавки:</p>
+                  <label for="novaPoshta">
+                    <div>
+                      <input
+                        id="novaPoshta"
+                        class="delivery__list"
+                        type="radio"
+                        name="delivery"
+                        checked
+                        value="novaPoshta"
+                      />
+                      Нова Пошта
+                    </div>
+                  </label>
+                  <label for="novaPoshtaPostomat">
+                    <div>
+                      <input
+                        id="novaPoshtaPostomat"
+                        class="delivery__list"
+                        type="radio"
+                        name="delivery"
+                        value="novaPoshtaPostomat"
+                      />
+                      Нова Пошта Паштомат
+                    </div>
+                  </label>
+                </div>
+
+                <div class="address__block">
+                  <input
+                    class="formData__list"
+                    type="text"
+                    placeholder="Область"
+                    name="region"
+                  />
+                  <input
+                    class="formData__list"
+                    type="text"
+                    placeholder="Місто"
+                    name="city"
+                  />
+                  <input
+                    class="formData__list"
+                    type="text"
+                    placeholder="Відділення"
+                    name="Department"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <!-- <div class="payments">
+              <p class="payments__title">Спосіб оплати</p>
+              <p class="payments__subtitle">Оплата при отриманні</p>
+              <p class="payments__text">Ваші персональні дані будуть використовуватися для обробки вашого замовлення, підтримки вашого досвіду на цьому сайті та для інших цілей, описаних у цьому посиланню - 
+                <a class="payments__link" href="../src/styles/blocks/privacyPolitic/privacyPolitic.html">політика конфіденційності
+                </a>.
+            </p>
+
+            <button class="payments__button">
+              <a href="#" class="payments__btn">Оформити замовлення </a>
+            </button>
+            </div> -->
+          </div>
+          
+          <div class="ourOrder__container">
+            <p class="formData__title"">Ваше замовлення </p>
+            <hr>
+            <div class="ourOrder" id="orderItems">
+              <!-- our order -->
+            </div>
+            <hr />
+            <div class="cart__footer">
+              <div class="cart__total">
+                Всього:
+                <span id="orderTotalPrice" class="cart__total--price">
+                  0 грн
+                </span>
+              </div>
+            </div>
+            <div class="payments">
+              <p class="payments__title">Спосіб оплати</p>
+              <p class="payments__subtitle">Оплата при отриманні</p>
+              <p class="payments__text">Ваші персональні дані будуть використовуватися для обробки вашого замовлення, підтримки вашого досвіду на цьому сайті та для інших цілей, описаних у цьому посиланню - 
+                <a class="payments__link" href="../src/styles/blocks/privacyPolitic/privacyPolitic.html">політика конфіденційності
+                </a>.
+            </p>
+
+            <button class="payments__button">
+              <a href="#" class="payments__btn">Оформити замовлення </a>
+            </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
   </body>
 </html>

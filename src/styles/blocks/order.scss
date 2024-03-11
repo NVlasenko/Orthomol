@@ -1,0 +1,280 @@
+.order {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  @include on-tablet {
+    padding: 20px;
+  }
+  @include on-desktop {
+    padding: 40px;
+  }
+  &__container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    @include on-tablet {
+      margin-top: 18px;
+      margin-bottom: 18px;
+      gap: 120px;
+    }
+    @include on-desktop {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      flex-direction: row;
+      gap: 150px;
+    }
+  }
+  &__title {
+    color: #232323;
+    font-size: 18px;
+    font-weight: 600;
+    @include on-tablet {
+      font-size: 30px;
+    }
+    @include on-desktop {
+      font-size: 36px;
+    }
+  }
+
+  &__placing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__close {
+    width: 30px;
+    height: 30px;
+    @include on-tablet {
+      width: 35px;
+      height: 35px;
+    }
+    @include on-desktop {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.formData {
+  &__title {
+    color: #232323;
+    font-size: 20px;
+    font-weight: 600;
+    @include on-tablet {
+      font-size: 25px;
+    }
+    @include on-desktop {
+      font-size: 32px;
+    }
+  }
+  &__container {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include on-tablet {
+      margin-top: 18px;
+      padding-bottom: 18px;
+    }
+    @include on-desktop {
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    @include on-tablet {
+      flex-direction: row;
+      gap: 25px;
+    }
+    @include on-desktop {
+      gap: 30px;
+    }
+  }
+
+  &__list {
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 220px;
+    padding-left: 10px;
+  }
+}
+
+.address {
+  margin-top: 20px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+    @include on-tablet {
+      flex-direction: row;
+      gap: 50px;
+    }
+    @include on-desktop {
+      gap: 60px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+.delivery {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__list {
+    cursor: pointer;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+.ourOrder {
+  &__container {
+    padding: 20px;
+    background-color: rgba(199, 220, 230, 0.15);
+    border-radius: 35px;
+  }
+}
+
+.payments {
+  margin-top: 50px;
+  width: 100%;
+  // @include on-tablet {
+  //   width: 300px;
+  // }
+  // @include on-desktop {
+  //   width: 500px;
+  // }
+  &__title {
+    color: #232323;
+    font-weight: 600;
+    font-size: 20px;
+    @include on-tablet {
+      font-size: 25px;
+    }
+    @include on-desktop {
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    color: grey;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: relative;
+    @include on-tablet {
+      font-size: 20px;
+      margin-top: 13px;
+      margin-left: 30px;
+    }
+    @include on-desktop {
+      font-size: 24px;
+      margin-top: 15px;
+      margin-left: 40px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/payment.svg);
+      background-repeat: no-repeat;
+      background-size: 13px;
+      left: -19px;
+      top: 6px;
+      width: 13px;
+      height: 13px;
+      @include on-tablet {
+        background-size: 15px;
+      left: -27px;
+      top: 8px;
+      width: 15px;
+      height: 15px;
+      }
+      @include on-desktop {
+        background-size: 18px;
+        left: -38px;
+        top: 8px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(59, 56, 56);
+    margin-top: 15px;
+  }
+
+  &__link {
+    color: rgb(59, 56, 56);
+  }
+
+  &__button {
+    width: 100%;
+    transition: all 1s ease-in-out;
+    border: 3px $mainTextColor solid;
+    background-color: $mainTextColor;
+    cursor: pointer;
+    text-align: center;
+    height: 59px;
+    border-radius: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    align-items: center;
+    margin-top: 30px;
+    &:hover {
+      background-color: #275aac;
+    }
+    @include on-tablet {
+      width: 244.77px;
+      height: 45px;
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 30px;
+    }
+    @include on-desktop {
+      width: 100%;
+      height: 59px;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 50px;
+    }
+    @include on-large {
+      // width: 280px;
+      height: 70px;
+      font-size: 22px;
+      line-height: 22px;
+      margin-top: 45px;
+    }
+  }
+
+  &__btn {
+    color: #fff;
+    text-decoration: none;
+  }
+}
