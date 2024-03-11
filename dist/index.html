@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/Vector.db965217.ico">
     <title>Orthomol</title>
     <link rel="stylesheet" href="/styles.956d002c.css">
-    <script src="/main.d8ebb8d6.js" defer=""></script>
+    <script type="module" src="/main.d8ebb8d6.js" defer=""></script>
   <script src="/styles.956d002c.js"></script></head>
   <body class="page__body" id="home">
     <div class="welcome" id="welcome-image">
@@ -806,66 +804,54 @@
       <div class="container">
         <div class="order__placing">
           <p class="order__title">Оформлення замовлення</p>
-          <img src="/close.50bf71c2.svg" alt="closeOrder" class="order__close" style="color: #000" id="closeOrder">
+          <img src="/close.50bf71c2.svg" class="order__close" style="color: #000" id="closeOrder">
         </div>
         <hr>
         <div class="order__container">
           <div class="order__formContainer">
-            <form action="#" class="formData">
+            <form action="#" class="formData" id="paymentForm">
               <p class="formData__title">Ваші данні</p>
               <div class="formData__container">
                 <div class="formData__block">
-                  <input class="formData__list" type="text" placeholder="Ваше ім’я" name="name">
-                  <input class="formData__list" type="text" placeholder="Ваше прізвище" name="surname">
+                  <input class="formData__list" type="text" placeholder="Ваше ім’я" name="name" required="">
+                  <input class="formData__list" type="text" placeholder="Ваше прізвище" name="surname" required="">
                 </div>
 
                 <div class="formData__block">
-                  <input class="formData__list" type="text" placeholder="Ваш телефон" name="number">
-                  <input class="formData__list" type="text" placeholder="Ваш email" name="email">
+                  <input class="formData__list" type="tel" placeholder="Ваш телефон" name="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="">
+                  <input class="formData__list" type="text" placeholder="Ваш email" name="email" required="">
+                </div>
+              </div>
+
+              <hr>
+              <div class="address">
+                <p class="formData__title">Вкажіть адресу доставки:</p>
+  
+                <div class="address__form">
+                  <div class="delivery">
+                    <p class="delivery__title">Спосіб досавки:</p>
+                    <label for="novaPoshta">
+                      <div>
+                        <input id="novaPoshta" class="delivery__list" type="radio" name="delivery" checked="" value="novaPoshta" required="">
+                        Нова Пошта
+                      </div>
+                    </label>
+                    <label for="novaPoshtaPostomat">
+                      <div>
+                        <input id="novaPoshtaPostomat" class="delivery__list" type="radio" name="delivery" value="novaPoshtaPostomat" required="">
+                        Нова Пошта Паштомат
+                      </div>
+                    </label>
+                  </div>
+  
+                  <div class="address__block">
+                    <input class="formData__list" type="text" placeholder="Область" name="region" required="">
+                    <input class="formData__list" type="text" placeholder="Місто" name="city" required="">
+                    <input class="formData__list" type="text" placeholder="Відділення" name="Department" required="">
+                  </div>
                 </div>
               </div>
             </form>
-            <hr>
-            <div class="address">
-              <p class="formData__title">Вкажіть адресу доставки:</p>
-
-              <form action="#" class="address__form">
-                <div class="delivery">
-                  <p class="delivery__title">Спосіб досавки:</p>
-                  <label for="novaPoshta">
-                    <div>
-                      <input id="novaPoshta" class="delivery__list" type="radio" name="delivery" checked="" value="novaPoshta">
-                      Нова Пошта
-                    </div>
-                  </label>
-                  <label for="novaPoshtaPostomat">
-                    <div>
-                      <input id="novaPoshtaPostomat" class="delivery__list" type="radio" name="delivery" value="novaPoshtaPostomat">
-                      Нова Пошта Паштомат
-                    </div>
-                  </label>
-                </div>
-
-                <div class="address__block">
-                  <input class="formData__list" type="text" placeholder="Область" name="region">
-                  <input class="formData__list" type="text" placeholder="Місто" name="city">
-                  <input class="formData__list" type="text" placeholder="Відділення" name="Department">
-                </div>
-              </form>
-            </div>
-
-            <!-- <div class="payments">
-              <p class="payments__title">Спосіб оплати</p>
-              <p class="payments__subtitle">Оплата при отриманні</p>
-              <p class="payments__text">Ваші персональні дані будуть використовуватися для обробки вашого замовлення, підтримки вашого досвіду на цьому сайті та для інших цілей, описаних у цьому посиланню - 
-                <a class="payments__link" href="../src/styles/blocks/privacyPolitic/privacyPolitic.html">політика конфіденційності
-                </a>.
-            </p>
-
-            <button class="payments__button">
-              <a href="#" class="payments__btn">Оформити замовлення </a>
-            </button>
-            </div> -->
           </div>
           
           <div class="ourOrder__container">
@@ -885,14 +871,15 @@
             </div>
             <div class="payments">
               <p class="payments__title">Спосіб оплати</p>
-              <p class="payments__subtitle">Оплата при отриманні</p>
+              <input class="payments__list" form="paymentForm" checked="" type="radio" name="payment">Оплата при отриманні
+              <input class="payments__list" form="paymentForm" type="radio" name="payment">Оплата картою
               <p class="payments__text">Ваші персональні дані будуть використовуватися для обробки вашого замовлення, підтримки вашого досвіду на цьому сайті та для інших цілей, описаних у цьому посиланню - 
                 <a class="payments__link" href="/styles/blocks/privacyPolitic/privacyPolitic.html">політика конфіденційності
                 </a>.
             </p>
 
             <button class="payments__button">
-              <a href="#" class="payments__btn">Оформити замовлення </a>
+             Оформити замовлення
             </button>
             </div>
           </div>

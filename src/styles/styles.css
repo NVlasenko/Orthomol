@@ -14,6 +14,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul {
   scroll-behavior: smooth;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   overflow-x: hidden;
   margin: 0 auto;
@@ -2440,6 +2444,7 @@ hr {
     left: -50px;
   }
 }
+
 .shipping {
   background-color: #f3f5da;
   height: 100%;
@@ -2749,6 +2754,17 @@ hr {
   width: 100%;
   height: 100%;
   padding: 20px;
+  position: fixed;
+  z-index: 27;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: 2s all ease-in-out;
+  transition: 2s all ease-in-out;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 100px;
+  overflow-y: auto;
 }
 @media (min-width: 744px) {
   .order {
@@ -2819,6 +2835,7 @@ hr {
 .order__close {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 @media (min-width: 744px) {
   .order__close {
@@ -2973,7 +2990,6 @@ input:focus {
 }
 
 .payments {
-  margin-top: 50px;
   width: 100%;
 }
 .payments__title {
@@ -3013,35 +3029,6 @@ input:focus {
     margin-left: 40px;
   }
 }
-.payments__subtitle::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/icons/payment.svg);
-  background-repeat: no-repeat;
-  background-size: 13px;
-  left: -19px;
-  top: 6px;
-  width: 13px;
-  height: 13px;
-}
-@media (min-width: 744px) {
-  .payments__subtitle::before {
-    background-size: 15px;
-    left: -27px;
-    top: 8px;
-    width: 15px;
-    height: 15px;
-  }
-}
-@media (min-width: 1280px) {
-  .payments__subtitle::before {
-    background-size: 18px;
-    left: -38px;
-    top: 8px;
-    width: 18px;
-    height: 18px;
-  }
-}
 .payments__text {
   font-size: 14px;
   font-weight: 400;
@@ -3062,6 +3049,7 @@ input:focus {
   height: 59px;
   border-radius: 34px;
   font-size: 16px;
+  color: #fff;
   font-weight: 600;
   line-height: 22px;
   -webkit-box-align: center;
@@ -3097,8 +3085,4 @@ input:focus {
     line-height: 22px;
     margin-top: 45px;
   }
-}
-.payments__btn {
-  color: #fff;
-  text-decoration: none;
 }

@@ -12,5 +12,8 @@
     "deploy": "git push origin main:gh-pages"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "blocks": "^0.3.5"
+  }
 }
